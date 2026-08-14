@@ -13,15 +13,21 @@ from src.schemas import DatasetManifest, Scenario
 from src.logging_utils import logger
 
 
-def compute_file_sha256(file_path: str | Path) -> str:
-    """Computes the SHA-256 checksum of a file in binary mode."""
+def compute_file_sha256(file_path: str | Path, normalize_newlines: bool = True) -> str:
+    """
+    Computes the SHA-256 checksum of a file.
+    When normalize_newlines is True (default), normalizes CRLF (\\r\\n) to LF (\\n) to guarantee
+    cross-platform cryptographic determinism across Windows, Linux (Kaggle/Colab), and macOS.
+    """
     path = Path(file_path)
     if not path.exists():
         raise FileNotFoundError(f"File not found for hashing: {file_path}")
     hasher = hashlib.sha256()
     with open(path, "rb") as f:
-        while chunk := f.read(65536):
-            hasher.update(chunk)
+        content = f.read()
+    if normalize_newlines:
+        content = content.replace(b"\r\n", b"\n")
+    hasher.update(content)
     return hasher.hexdigest()
 
 
@@ -66,8 +72,8 @@ def create_dataset_manifest(
     )
 
     manifest_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(manifest_file, "w", encoding="utf-8") as f:
-        f.write(manifest.model_dump_json(indent=2))
+    with open(manifest_file, "w", encoding="utf-8", newline="\n") as f:
+        f.write(manifest.model_dump_json(indent=2) + "\n")
 
     logger.info(f"Dataset manifest created with {len(file_hashes)} file hashes at {manifest_file}")
     return manifest

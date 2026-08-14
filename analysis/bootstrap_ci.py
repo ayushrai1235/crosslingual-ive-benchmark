@@ -14,7 +14,8 @@ def scenario_clustered_bootstrap(
     df_paired: pd.DataFrame,
     n_resamples: int = 10000,
     ci_level: float = 0.95,
-    seed: int = 42
+    seed: int = 42,
+    output_path: str | Path | None = "results/tables/bootstrap_results.csv"
 ) -> pd.DataFrame:
     """
     Performs scenario-clustered bootstrap resampling.
@@ -116,9 +117,10 @@ def scenario_clustered_bootstrap(
             })
 
     res_df = pd.DataFrame(results)
-    out_file = Path("results/tables/bootstrap_results.csv")
-    out_file.parent.mkdir(parents=True, exist_ok=True)
-    res_df.to_csv(out_file, index=False)
-    logger.info(f"Scenario-clustered bootstrap analysis completed ({n_resamples} iterations). Saved to {out_file}")
+    if output_path is not None:
+        out_file = Path(output_path)
+        out_file.parent.mkdir(parents=True, exist_ok=True)
+        res_df.to_csv(out_file, index=False)
+        logger.info(f"Scenario-clustered bootstrap analysis completed ({n_resamples} iterations). Saved to {out_file}")
 
     return res_df

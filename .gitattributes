@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization on checkout and commit
+* text=auto eol=lf
+
+# Explicitly ensure JSON dataset, source code, and configuration files always use LF line endings
+*.json text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.cff text eol=lf
+*.toml text eol=lf
+*.ipynb text eol=lf

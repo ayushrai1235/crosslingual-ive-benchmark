@@ -51,7 +51,9 @@ def main():
     parser.add_argument("--smoke-test", action="store_true", help="Environment validation: 1 scenario × 1 lang × 2 conds × 1 model = 2 judgments.")
     parser.add_argument("--scientific-pilot", action="store_true", help="Stage 2: Run 10 scenarios across 9 models (540 judgments).")
     parser.add_argument("--full-benchmark", action="store_true", help="Stage 3: Run full 20 scenarios across 9 models (1,080 judgments).")
-    parser.add_argument("--model", type=str, default=None, help="Run specific model ID.")
+    parser.add_argument("--model", type=str, default=None, help="Run specific model ID (e.g. qwen_2_5_7b).")
+    parser.add_argument("--models", type=str, default=None, help="Comma-separated list of model IDs to run.")
+    parser.add_argument("--exclude-models", type=str, default=None, help="Comma-separated list of model IDs to skip (e.g. llama_3_1_8b when HF access is pending).")
     parser.add_argument("--languages", type=str, default=None, help="Comma-separated language codes (default: en,hi,es or en for smoke-test).")
     parser.add_argument("--dry-run", action="store_true", help="Run with isolated mock runner for testing.")
     parser.add_argument("--resume", action="store_true", help="Resume from previous checkpoints.")
@@ -73,40 +75,53 @@ def main():
     exp_config = get_experiment_config()
     registry = ModelRegistry()
 
+    # Model resolution helper
+    all_enabled_models = registry.list_models(enabled_only=True)
+    excluded_ids = set([m.strip() for m in args.exclude_models.split(",")]) if args.exclude_models else set()
+
+    if args.model:
+        selected_models = [registry.get_model(args.model)]
+    elif args.models:
+        target_ids = [m.strip() for m in args.models.split(",")]
+        selected_models = [registry.get_model(mid) for mid in target_ids]
+    else:
+        selected_models = [m for m in all_enabled_models if m.id not in excluded_ids]
+
+    if excluded_ids:
+        logger.info(f"Explicitly excluded models: {list(excluded_ids)} (e.g. pending access). No substitutions applied.")
+
     # Determine Scenarios, Models, and Languages
     if args.smoke_test:
         scenarios = load_scenarios(count=1)
-        if args.model:
-            models = [registry.get_model(args.model)]
-        else:
-            models = registry.list_models(enabled_only=True)[:1]
+        # For smoke test: default to first selected model (e.g., qwen_2_5_7b or specified model)
+        models = selected_models[:1]
         languages = ["en"] if not args.languages else [l.strip() for l in args.languages.split(",")]
         stage_name = f"Environment Smoke Test (1 scenario × {len(languages)} lang × 2 conds × {len(models)} model = {len(scenarios) * len(languages) * 2 * len(models)} judgments)"
         output_dir = "data/judgments/dry_run" if args.dry_run else "data/judgments/smoke_test"
     elif args.scientific_pilot:
         scenarios = load_scenarios(count=10)
-        models = registry.list_models(enabled_only=True)
+        models = selected_models
         languages = ["en", "hi", "es"] if not args.languages else [l.strip() for l in args.languages.split(",")]
-        stage_name = "Stage 2: Scientific Pilot (10 scenarios × 3 langs × 2 conds × 9 models = 540 judgments)"
+        stage_name = f"Stage 2: Scientific Pilot (10 scenarios × {len(languages)} langs × 2 conds × {len(models)} models = {len(scenarios) * len(languages) * 2 * len(models)} judgments)"
         output_dir = "data/judgments/dry_run" if args.dry_run else "data/judgments"
     elif args.full_benchmark:
         scenarios = load_scenarios(count=20)
-        models = registry.list_models(enabled_only=True)
+        models = selected_models
         languages = ["en", "hi", "es"] if not args.languages else [l.strip() for l in args.languages.split(",")]
-        stage_name = "Stage 3: Full Benchmark (20 scenarios × 3 langs × 2 conds × 9 models = 1,080 judgments)"
+        stage_name = f"Stage 3: Full Benchmark (20 scenarios × {len(languages)} langs × 2 conds × {len(models)} models = {len(scenarios) * len(languages) * 2 * len(models)} judgments)"
         output_dir = "data/judgments/dry_run" if args.dry_run else "data/judgments"
-    elif args.model:
+    elif args.model or args.models:
         scenarios = load_scenarios()
-        models = [registry.get_model(args.model)]
+        models = selected_models
         languages = ["en", "hi", "es"] if not args.languages else [l.strip() for l in args.languages.split(",")]
-        stage_name = f"Single Model Run: {args.model} ({len(scenarios)} scenarios)"
+        stage_name = f"Selected Model Run: {[m.id for m in models]} ({len(scenarios)} scenarios)"
         output_dir = "data/judgments/dry_run" if args.dry_run else "data/judgments"
     else:
         logger.info("No stage flag specified. Defaulting to --scientific-pilot.")
         scenarios = load_scenarios(count=10)
-        models = registry.list_models(enabled_only=True)
+        models = selected_models
         languages = ["en", "hi", "es"] if not args.languages else [l.strip() for l in args.languages.split(",")]
-        stage_name = "Stage 2: Scientific Pilot (10 scenarios × 3 langs × 2 conds × 9 models = 540 judgments)"
+        stage_name = f"Stage 2: Scientific Pilot (10 scenarios × {len(languages)} langs × 2 conds × {len(models)} models = {len(scenarios) * len(languages) * 2 * len(models)} judgments)"
         output_dir = "data/judgments/dry_run" if args.dry_run else "data/judgments"
 
     logger.info(f"Initiating {stage_name}: {len(scenarios)} scenarios, {len(models)} models, langs={languages}.")

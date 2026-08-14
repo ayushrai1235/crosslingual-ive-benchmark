@@ -78,7 +78,7 @@ def run_preflight() -> bool:
             print(f"[FAIL] Missing dependency: {pkg_name}. Run `pip install -q {pkg_name}`.")
             all_passed = False
 
-    # 4. Hugging Face Authentication & Gated Models
+    # 4. Hugging Face Authentication & Gated Models Access Check
     try:
         from huggingface_hub import HfApi
         api = HfApi()
@@ -90,9 +90,35 @@ def run_preflight() -> bool:
                 print(f"[PASS] Authenticated Hugging Face User: {user_info.get('name', 'Unknown')}")
             except Exception as e:
                 print(f"[WARN] Hugging Face token verification warning: {e}")
+
+            # Check individual judge model access status
+            print("\n--- Hugging Face Judge Model Access Status ---")
+            models_to_check = [
+                ("Llama-3.1-8B-Instruct", "meta-llama/Llama-3.1-8B-Instruct", True),
+                ("Qwen3-8B", "Qwen/Qwen3-8B", False),
+                ("Qwen2.5-7B-Instruct", "Qwen/Qwen2.5-7B-Instruct", False),
+                ("Gemma-3-4B-IT", "google/gemma-3-4b-it", True),
+                ("Gemma-3-12B-IT", "google/gemma-3-12b-it", True),
+                ("Aya-Expanse-8B", "CohereLabs/aya-expanse-8b", False),
+                ("Command-R7B", "CohereLabs/c4ai-command-r7b-12-2024", True),
+                ("BLOOMZ-7B1-MT", "bigscience/bloomz-7b1-mt", False),
+                ("mT0-XL", "bigscience/mt0-xl", False)
+            ]
+            for m_name, m_repo, is_gated in models_to_check:
+                try:
+                    api.model_info(m_repo, token=hf_token)
+                    print(f"  [PASS] {m_name:<24} ({m_repo}): Access CONFIRMED")
+                except Exception as e:
+                    err_str = str(e).lower()
+                    if "gated" in err_str or "forbidden" in err_str or "403" in err_str or "unauthorized" in err_str or "access" in err_str:
+                        print(f"  [PENDING] {m_name:<24} ({m_repo}): Access PENDING approval.")
+                        print(f"            -> Do NOT attempt to download/run until approved. Never substitute.")
+                    else:
+                        print(f"  [WARN] {m_name:<24} ({m_repo}): Could not verify ({e})")
+            print("-" * 46 + "\n")
         else:
             print("[WARN] No HF_TOKEN detected in environment.")
-            print("       -> Gated models (Llama 3.1, Gemma 3) require a Hugging Face token.")
+            print("       -> Gated models (Llama 3.1, Gemma 3, Command R) require a Hugging Face token.")
             print("       -> Add your token in Kaggle Secrets as 'HF_TOKEN'.")
     except ImportError:
         print("[WARN] huggingface_hub not installed.")

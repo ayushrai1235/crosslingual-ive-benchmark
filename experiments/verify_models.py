@@ -61,7 +61,10 @@ def verify_model(model_entry, live_load: bool = False) -> Dict[str, Any]:
     notes = []
 
     # Model specific verification notes
-    if model_id == "qwen3_8b":
+    if model_id == "llama_3_1_8b":
+        status_label = "ACCESS_PENDING"
+        notes.append("Gated repository: Hugging Face access status is PENDING. Do not attempt download/run until access is approved. Never substitute.")
+    elif model_id == "qwen3_8b":
         notes.append("Thinking/reasoning mode disabled for primary IVE evaluation.")
     elif model_id == "gemma_3_12b":
         notes.append("12B scale requires batch_size=1 and 4-bit quantization on 16GB GPUs.")
@@ -72,25 +75,29 @@ def verify_model(model_entry, live_load: bool = False) -> Dict[str, Any]:
     elif model_id == "bloomz_7b1_mt":
         notes.append("Instruction-tuned on xP3mt multilingual prompt dataset.")
 
-    if getattr(model_entry, "is_gated", False):
+    if getattr(model_entry, "is_gated", False) and model_id != "llama_3_1_8b":
         notes.append("Gated repository: requires Hugging Face authentication.")
 
     if live_load:
-        import torch
-        if torch.cuda.is_available():
-            try:
-                from src.model_runner import get_model_runner
-                runner = get_model_runner(model_entry, use_mock=False)
-                runner.load()
-                measured_vram = f"{runner.measured_peak_vram_gb:.2f} GB"
-                load_test_status = "PASSED (Live GPU Load)"
-                runner.unload()
-            except Exception as e:
-                load_test_status = f"FAILED: {str(e)[:40]}"
-                notes.append(f"Load error: {e}")
+        if model_id == "llama_3_1_8b":
+            load_test_status = "SKIPPED (Access Pending)"
+            notes.append("Live load skipped: Hugging Face access is pending approval.")
         else:
-            load_test_status = "SKIPPED (No CUDA)"
-            notes.append("Live load skipped: CUDA device not detected.")
+            import torch
+            if torch.cuda.is_available():
+                try:
+                    from src.model_runner import get_model_runner
+                    runner = get_model_runner(model_entry, use_mock=False)
+                    runner.load()
+                    measured_vram = f"{runner.measured_peak_vram_gb:.2f} GB"
+                    load_test_status = "PASSED (Live GPU Load)"
+                    runner.unload()
+                except Exception as e:
+                    load_test_status = f"FAILED: {str(e)[:40]}"
+                    notes.append(f"Load error: {e}")
+            else:
+                load_test_status = "SKIPPED (No CUDA)"
+                notes.append("Live load skipped: CUDA device not detected.")
 
     notes_str = "; ".join(notes) if notes else "Fully verified and ready for benchmark execution."
 
@@ -119,11 +126,24 @@ def verify_model(model_entry, live_load: bool = False) -> Dict[str, Any]:
 def main():
     parser = argparse.ArgumentParser(description="Verify pre-registered 9-model judge panel.")
     parser.add_argument("--live-load", action="store_true", help="Perform live GPU model loading test.")
+    parser.add_argument("--model", type=str, default=None, help="Specific model ID to verify.")
+    parser.add_argument("--models", type=str, default=None, help="Comma-separated model IDs to verify.")
+    parser.add_argument("--exclude-models", type=str, default=None, help="Comma-separated model IDs to exclude.")
     args = parser.parse_args()
 
-    logger.info("Verifying 9 pre-registered judge model entries across 7 families...")
     registry = ModelRegistry()
-    models = registry.list_models(enabled_only=False)
+    all_models = registry.list_models(enabled_only=False)
+    excluded_ids = set([m.strip() for m in args.exclude_models.split(",")]) if args.exclude_models else set()
+
+    if args.model:
+        models = [registry.get_model(args.model)]
+    elif args.models:
+        target_ids = [m.strip() for m in args.models.split(",")]
+        models = [registry.get_model(mid) for mid in target_ids]
+    else:
+        models = [m for m in all_models if m.id not in excluded_ids]
+
+    logger.info(f"Verifying {len(models)} pre-registered judge model entries across 7 families...")
 
     out_dir = Path("results/tables")
     out_dir.mkdir(parents=True, exist_ok=True)

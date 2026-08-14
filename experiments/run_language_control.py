@@ -31,13 +31,28 @@ def load_control_items(path: str | Path = "data/language_control/items.json") ->
 
 def main():
     parser = argparse.ArgumentParser(description="Run language comprehension control battery.")
-    parser.add_argument("--model", type=str, default=None, help="Specific model ID to evaluate (or all if omitted).")
+    parser.add_argument("--model", type=str, default=None, help="Specific model ID to evaluate.")
+    parser.add_argument("--models", type=str, default=None, help="Comma-separated list of model IDs to evaluate.")
+    parser.add_argument("--exclude-models", type=str, default=None, help="Comma-separated list of model IDs to exclude (e.g. llama_3_1_8b).")
     parser.add_argument("--mock", action="store_true", help="Use test MockRunner.")
     args = parser.parse_args()
 
     items = load_control_items()
     registry = ModelRegistry()
-    models = [registry.get_model(args.model)] if args.model else registry.list_models(enabled_only=True)
+    
+    all_enabled_models = registry.list_models(enabled_only=True)
+    excluded_ids = set([m.strip() for m in args.exclude_models.split(",")]) if args.exclude_models else set()
+
+    if args.model:
+        models = [registry.get_model(args.model)]
+    elif args.models:
+        target_ids = [m.strip() for m in args.models.split(",")]
+        models = [registry.get_model(mid) for mid in target_ids]
+    else:
+        models = [m for m in all_enabled_models if m.id not in excluded_ids]
+
+    if excluded_ids:
+        logger.info(f"Explicitly excluded models from language control: {list(excluded_ids)}. No substitutions applied.")
 
     out_dir = Path("results/tables")
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -81,7 +81,7 @@ def plot_fig1_ive_by_language_and_model(df_paired: pd.DataFrame, out_dir: Path):
     ax.set_xticks(x)
     ax.set_xticklabels(models, rotation=35, ha="right")
     ax.set_ylabel("Identifiable Victim Effect (IVE Score)")
-    ax.set_title("Figure 1: Identifiable Victim Effect (IVE) Across 9 LLM Judges & Languages")
+    ax.set_title(f"Figure 1: Identifiable Victim Effect (IVE) Across {len(models)} LLM Judges & Languages")
     ax.legend(title="Language", frameon=True)
     ax.grid(axis="y", linestyle=":", alpha=0.6)
 

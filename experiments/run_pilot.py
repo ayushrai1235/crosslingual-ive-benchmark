@@ -132,6 +132,7 @@ def main():
     )
 
     total_judgments = []
+    model_manifests: List[Dict[str, Any]] = []
     cumulative_stats: Dict[str, int] = {
         "requested_judgments": 0,
         "inference_attempts": 0,
@@ -139,31 +140,104 @@ def main():
         "valid_parsed_judgments": 0,
         "inference_failures": 0,
         "parse_failures": 0,
+        "skipped_completed": 0,
     }
 
-    # Sequential execution: one model at a time with clean unloading
+    # Sequential execution: one model at a time with clean unloading and isolated error handling
     for i, model_entry in enumerate(models, 1):
         logger.info(f"[{i}/{len(models)}] Running Judge: {model_entry.name} ({model_entry.family}, arch={model_entry.architecture})")
-        judgments, stats = judge_runner.run_model_evaluation(
-            model_entry=model_entry,
-            scenarios=scenarios,
-            languages=languages,
-            use_mock=args.dry_run
-        )
-        total_judgments.extend(judgments)
-        for k, v in stats.items():
-            cumulative_stats[k] += v
+        try:
+            judgments, stats = judge_runner.run_model_evaluation(
+                model_entry=model_entry,
+                scenarios=scenarios,
+                languages=languages,
+                use_mock=args.dry_run,
+                resume=args.resume
+            )
+            total_judgments.extend(judgments)
+            model_manifests.append(stats)
+            for k in cumulative_stats.keys():
+                if k in stats and isinstance(stats[k], int):
+                    cumulative_stats[k] += stats[k]
+        except Exception as e:
+            err_str = str(e).lower()
+            is_gated = any(k in err_str for k in ["gated", "401", "403", "restricted", "access", "llama-3.1", "unauthorized"])
+            status = "PENDING_ACCESS" if is_gated else "FAILED"
+            logger.error(f"Isolated model failure for {model_entry.id} ({status}): {e}")
+            
+            # Calculate requested count for this model
+            req_count = len(scenarios) * len(languages) * 2
+            failed_manifest = {
+                "model_id": model_entry.id,
+                "model_name": model_entry.name,
+                "model_family": model_entry.family,
+                "category": model_entry.category,
+                "requested_judgments": req_count,
+                "inference_attempts": 0,
+                "successful_inferences": 0,
+                "valid_parsed_judgments": 0,
+                "inference_failures": 0,
+                "parse_failures": 0,
+                "skipped_completed": 0,
+                "execution_status": status,
+                "failure_reason": str(e),
+                "included_in_analysis": False,
+                "completed_at": None
+            }
+            model_manifests.append(failed_manifest)
+            cumulative_stats["requested_judgments"] += req_count
+
+    # Save Execution Manifest and Model Coverage Table
+    manifest_dir = Path("results/tables")
+    manifest_dir.mkdir(parents=True, exist_ok=True)
+    
+    execution_manifest = {
+        "stage": stage_name,
+        "dry_run": args.dry_run,
+        "resume": args.resume,
+        "total_requested": cumulative_stats["requested_judgments"],
+        "total_valid": cumulative_stats["valid_parsed_judgments"],
+        "total_included_models": sum(1 for m in model_manifests if m.get("included_in_analysis")),
+        "total_pending_models": sum(1 for m in model_manifests if m.get("execution_status") == "PENDING_ACCESS"),
+        "total_failed_models": sum(1 for m in model_manifests if m.get("execution_status") == "FAILED"),
+        "models": model_manifests
+    }
+
+    manifest_json_path = manifest_dir / "execution_manifest.json"
+    with open(manifest_json_path, "w", encoding="utf-8") as f:
+        json.dump(execution_manifest, f, indent=2)
+    logger.info(f"Saved execution manifest to {manifest_json_path}")
+
+    # Export Model Coverage CSV
+    try:
+        import pandas as pd
+        df_cov = pd.DataFrame(model_manifests)
+        cov_csv_path = manifest_dir / "model_coverage.csv"
+        df_cov.to_csv(cov_csv_path, index=False)
+        logger.info(f"Saved model coverage table to {cov_csv_path}")
+    except Exception as e:
+        logger.warning(f"Could not export model_coverage.csv: {e}")
 
     print("\n" + "=" * 80)
     print(f"BENCHMARK EXECUTION SUMMARY: {stage_name}")
     print("=" * 80)
-    print(f"1. Requested Judgments     : {cumulative_stats['requested_judgments']}")
-    print(f"2. Inference Attempts       : {cumulative_stats['inference_attempts']}")
-    print(f"3. Successful Inferences   : {cumulative_stats['successful_inferences']}")
-    print(f"4. Valid Parsed Judgments  : {cumulative_stats['valid_parsed_judgments']} ({cumulative_stats['valid_parsed_judgments']/max(cumulative_stats['requested_judgments'], 1)*100:.1f}%)")
-    print(f"5. Inference Failures      : {cumulative_stats['inference_failures']}")
-    print(f"6. Parse Failures          : {cumulative_stats['parse_failures']}")
-    print(f"Output Directory           : {output_dir}")
+    print(f"1. Total Requested Judgments : {cumulative_stats['requested_judgments']}")
+    print(f"2. Total Inference Attempts  : {cumulative_stats['inference_attempts']}")
+    print(f"3. Total Successful Inferences: {cumulative_stats['successful_inferences']}")
+    print(f"4. Total Valid Judgments     : {cumulative_stats['valid_parsed_judgments']} ({cumulative_stats['valid_parsed_judgments']/max(cumulative_stats['requested_judgments'], 1)*100:.1f}%)")
+    print(f"5. Skipped (Already Valid)   : {cumulative_stats['skipped_completed']}")
+    print(f"6. Inference Failures        : {cumulative_stats['inference_failures']}")
+    print(f"7. Parse Failures            : {cumulative_stats['parse_failures']}")
+    print(f"8. Active Included Models    : {execution_manifest['total_included_models']}/{len(models)}")
+    print(f"9. Pending Access Models     : {execution_manifest['total_pending_models']}/{len(models)}")
+    print("-" * 80)
+    print(f"{'Model ID':<18} | {'Status':<14} | {'Req':<4} | {'Valid':<5} | {'Included':<8} | Notes")
+    print("-" * 80)
+    for m in model_manifests:
+        notes = m.get("failure_reason") or "OK"
+        if len(notes) > 30:
+            notes = notes[:27] + "..."
+        print(f"{m['model_id']:<18} | {m['execution_status']:<14} | {m['requested_judgments']:<4} | {m['valid_parsed_judgments']:<5} | {str(m['included_in_analysis']):<8} | {notes}")
     print("=" * 80)
 
     if args.smoke_test:

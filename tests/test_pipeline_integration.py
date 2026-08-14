@@ -95,3 +95,90 @@ def test_full_pipeline_flow(tmp_path):
     df_raw = load_raw_judgments(judgments_dir, include_mock=True)
     df_paired = compute_paired_ive(df_raw, output_path=tmp_path / "paired.csv")
     assert len(df_paired) == 9  # 3 scenarios * 3 languages
+
+
+import pandas as pd
+
+
+def test_model_runner_resume_and_deduplication(tmp_path):
+    """Verifies that JudgeRunner resume logic skips already evaluated trials and deduplicates correctly."""
+    judgments_dir = tmp_path / "judgments"
+    judgments_dir.mkdir(parents=True)
+
+    gen = ScenarioGenerator(output_dir=tmp_path / "scenarios")
+    seed_scenarios = gen.generate_canonical_seed_scenarios()[:2]  # 2 scenarios
+    trans = ScenarioTranslator(translations_dir=tmp_path / "translations")
+    scenarios = trans.apply_canonical_translations(seed_scenarios)
+
+    registry = ModelRegistry()
+    test_model = registry.get_model("qwen_2_5_7b")
+
+    judge_runner = JudgeRunner(
+        prompt_template_path="prompts/judge.txt",
+        output_dir=judgments_dir
+    )
+
+    # Initial Run (2 scenarios * 2 langs * 2 conds = 8 trials)
+    judgments_1, stats_1 = judge_runner.run_model_evaluation(
+        model_entry=test_model,
+        scenarios=scenarios,
+        languages=["en", "es"],
+        use_mock=True,
+        resume=False
+    )
+    assert len(judgments_1) == 8
+    assert stats_1["inference_attempts"] == 8
+    assert stats_1["execution_status"] == "COMPLETE"
+
+    # Second Run with resume=True (should skip all 8)
+    judgments_2, stats_2 = judge_runner.run_model_evaluation(
+        model_entry=test_model,
+        scenarios=scenarios,
+        languages=["en", "es"],
+        use_mock=True,
+        resume=True
+    )
+    assert len(judgments_2) == 8
+    assert stats_2["inference_attempts"] == 0
+    assert stats_2["skipped_completed"] == 8
+    assert stats_2["execution_status"] == "COMPLETE"
+
+    # Test load_raw_judgments deduplication
+    df_raw = load_raw_judgments(judgments_dir, include_mock=True)
+    assert len(df_raw) == 8
+
+
+def test_model_coverage_generation(tmp_path):
+    """Verifies that generate_model_coverage_from_judgments properly detects complete vs pending models."""
+    from analysis.load_results import generate_model_coverage_from_judgments
+
+    # Create mock dataframe with 8 models evaluated and 1 (llama_3_1_8b) missing
+    records = []
+    models_evaluated = [
+        "qwen3_8b", "qwen_2_5_7b", "gemma_3_4b", "gemma_3_12b",
+        "aya_expanse_8b", "command_r7b", "bloomz_7b1_mt", "mt0_xl"
+    ]
+    for mid in models_evaluated:
+        records.append({
+            "model_id": mid,
+            "scenario_id": "SCEN_001",
+            "language": "en",
+            "victim_condition": "identifiable",
+            "parsed_allocation": 75.0
+        })
+    df_mock = pd.DataFrame(records)
+
+    cov_df = generate_model_coverage_from_judgments(
+        df=df_mock,
+        output_path=tmp_path / "model_coverage.csv"
+    )
+
+    assert len(cov_df) == 9
+    llama_row = cov_df[cov_df["model_id"] == "llama_3_1_8b"].iloc[0]
+    assert llama_row["execution_status"] == "PENDING_ACCESS"
+    assert llama_row["included_in_analysis"] is False or llama_row["included_in_analysis"] == 0
+
+    qwen_row = cov_df[cov_df["model_id"] == "qwen_2_5_7b"].iloc[0]
+    assert qwen_row["execution_status"] == "COMPLETE"
+    assert qwen_row["included_in_analysis"] is True or qwen_row["included_in_analysis"] == 1
+

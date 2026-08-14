@@ -14,7 +14,7 @@ models:
     family: "Llama"
     category: "general_purpose"
     hf_id: "meta-llama/Llama-3.1-8B-Instruct"
-    revision: "0e9e39f249a80c85ad86791f88002edb82b03229"
+    revision: "0e9e39f249a16976918f6564b8830bc894c89659"
     parameters: "8.0B"
     license: "Llama 3.1 Community License"
     officially_documented_languages:
@@ -49,7 +49,7 @@ models:
     family: "Qwen"
     category: "general_reasoning_multilingual"
     hf_id: "Qwen/Qwen3-8B"
-    revision: "99e0ff955745ba6d3e8e19b5b5463df2fa92cf7c"
+    revision: "b968826d9c46dd6066d109eabc6255188de91218"
     parameters: "8.0B"
     license: "Apache-2.0"
     officially_documented_languages:
@@ -87,7 +87,7 @@ models:
     family: "Qwen"
     category: "general_multilingual"
     hf_id: "Qwen/Qwen2.5-7B-Instruct"
-    revision: "d7dbd9a368d40be42e01dfa9290f671dc405a767"
+    revision: "a09a35458c702b33eeacc393d103063234e8bc28"
     parameters: "7.6B"
     license: "Apache-2.0"
     officially_documented_languages:
@@ -125,7 +125,7 @@ models:
     family: "Gemma"
     category: "lightweight_multilingual"
     hf_id: "google/gemma-3-4b-it"
-    revision: "54d5e94bbfb1d83ce93f9c6be3d5a4be461f95a4"
+    revision: "093f9f388b31de276ce2de164bdc2081324b9767"
     parameters: "4.0B"
     license: "Gemma Terms of Use"
     officially_documented_languages:
@@ -162,7 +162,7 @@ models:
     family: "Gemma"
     category: "larger_multilingual"
     hf_id: "google/gemma-3-12b-it"
-    revision: "18f8e8f81014e7a89b3f3b97b0a7018861df40bb"
+    revision: "96b6f1eccf38110c56df3a15bffe176da04bfd80"
     parameters: "12.0B"
     license: "Gemma Terms of Use"
     officially_documented_languages:
@@ -199,7 +199,7 @@ models:
     family: "Aya"
     category: "multilingual_specialist"
     hf_id: "CohereLabs/aya-expanse-8b"
-    revision: "4668b5ceb3c3b0fb320daef7d39366e408d6d6fb"
+    revision: "5062468bf9bc0c6035fd64e06274333ec127d980"
     parameters: "8.0B"
     license: "CC-BY-NC-4.0"
     officially_documented_languages:
@@ -247,7 +247,7 @@ models:
     family: "Command"
     category: "multilingual_general"
     hf_id: "CohereLabs/c4ai-command-r7b-12-2024"
-    revision: "68a6f4438343f87532a32c25602410a8d6e355c2"
+    revision: "4f3d0aa6856e322f2f4480fe65420d5d53d297b8"
     parameters: "7.0B"
     license: "CC-BY-NC-4.0"
     officially_documented_languages:
@@ -286,7 +286,7 @@ models:
     family: "BLOOMZ"
     category: "multilingual_instruction"
     hf_id: "bigscience/bloomz-7b1-mt"
-    revision: "5767b45f479d2b2deaa439a3f4e24eb5ee8225e0"
+    revision: "fba4ea6dc5719f12df4f36b4236aa042f6998f24"
     parameters: "7.1B"
     license: "BigScience OpenRAIL-M v1"
     officially_documented_languages:
@@ -322,7 +322,7 @@ models:
     family: "mT0"
     category: "crosslingual_instruction"
     hf_id: "bigscience/mt0-xl"
-    revision: "f78a2e7b57b98ae2e5d1a5aaebfae498c8cb5f87"
+    revision: "7332741e6029c63e0226c0b5e81820941414c7fd"
     parameters: "3.7B"
     license: "Apache-2.0"
     officially_documented_languages:

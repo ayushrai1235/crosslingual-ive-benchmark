@@ -14,7 +14,11 @@ from src.dataset_manager import verify_dataset_integrity
 from src.reproducibility import set_seed, save_environment_metadata
 from src.logging_utils import logger
 
-from analysis.load_results import load_raw_judgments, generate_missingness_report
+from analysis.load_results import (
+    load_raw_judgments,
+    generate_missingness_report,
+    generate_model_coverage_from_judgments
+)
 from analysis.compute_ive import compute_paired_ive, summarize_ive_by_language
 from analysis.cross_language import compute_cross_language_contrasts
 from analysis.model_comparison import generate_model_summary, generate_family_and_category_summary
@@ -63,9 +67,19 @@ def main():
         print("*" * 80 + "\n")
         sys.exit(0)
 
-    # 3. Missingness & Parse Rates
-    logger.info("Generating parse rates and missingness audit...")
+    # 3. Model Coverage & Status Audit
+    logger.info("Generating model coverage and execution status audit...")
+    cov_df = generate_model_coverage_from_judgments(df_raw, output_path="results/tables/model_coverage.csv")
     generate_missingness_report(df_raw, "results/tables/missingness_report.csv")
+
+    active_models = df_raw["model_id"].unique().tolist()
+    pending_models = [m for m in ["llama_3_1_8b"] if m not in active_models]
+    print("\n" + "-" * 60)
+    print("BENCHMARK PANEL STATUS:")
+    print(f"  Active Evaluated Models (N = {len(active_models)}): {', '.join(active_models)}")
+    if pending_models:
+        print(f"  Pending Access Models  (N = {len(pending_models)}): {', '.join(pending_models)} (Gated / Pending Approval)")
+    print("-" * 60)
 
     # 4. Paired IVE Calculation
     logger.info("Computing paired scenario-level IVE metrics...")

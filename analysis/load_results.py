@@ -48,6 +48,16 @@ def load_raw_judgments(judgments_dir: str | Path = "data/judgments", include_moc
         return pd.DataFrame()
 
     df = pd.DataFrame(records)
+    
+    # Deduplicate: if multiple records exist for (model_id, scenario_id, language, victim_condition), keep the last record
+    if not df.empty:
+        if "timestamp" in df.columns:
+            df = df.sort_values(by="timestamp")
+        initial_len = len(df)
+        df = df.drop_duplicates(subset=["model_id", "scenario_id", "language", "victim_condition"], keep="last")
+        if len(df) < initial_len:
+            logger.info(f"Deduplicated judgment records: removed {initial_len - len(df)} duplicate records.")
+
     logger.info(f"Loaded {len(df)} total raw judgment records from {len(jsonl_files)} files.")
     return df
 
@@ -75,3 +85,59 @@ def generate_missingness_report(df: pd.DataFrame, output_path: str | Path = "res
     grouped.to_csv(out_file, index=False)
     logger.info(f"Missingness and parse-rate report saved to {out_file}")
     return grouped
+
+
+def generate_model_coverage_from_judgments(
+    df: pd.DataFrame,
+    expected_models: Optional[List[str]] = None,
+    output_path: str | Path = "results/tables/model_coverage.csv"
+) -> pd.DataFrame:
+    """Generates a high-level summary of model coverage and inclusion status."""
+    if df.empty and not expected_models:
+        return pd.DataFrame()
+
+    if expected_models is None:
+        expected_models = [
+            "llama_3_1_8b", "qwen3_8b", "qwen_2_5_7b", "gemma_3_4b",
+            "gemma_3_12b", "aya_expanse_8b", "command_r7b", "bloomz_7b1_mt", "mt0_xl"
+        ]
+
+    rows = []
+    for mid in expected_models:
+        sub = df[df["model_id"] == mid] if not df.empty else pd.DataFrame()
+        total_trials = len(sub)
+        valid_trials = sub["parsed_allocation"].notna().sum() if total_trials > 0 else 0
+        
+        if total_trials == 0:
+            status = "PENDING_ACCESS" if mid == "llama_3_1_8b" else "NOT_RUN"
+            included = False
+            notes = "Gated access pending approval" if mid == "llama_3_1_8b" else "No evaluation records found"
+        elif valid_trials == total_trials and total_trials > 0:
+            status = "COMPLETE"
+            included = True
+            notes = "All trials validly parsed"
+        elif valid_trials > 0:
+            status = "PARTIAL"
+            included = True
+            notes = f"{valid_trials}/{total_trials} valid parsed judgments"
+        else:
+            status = "FAILED"
+            included = False
+            notes = "Zero valid allocations parsed"
+
+        rows.append({
+            "model_id": mid,
+            "total_trials": int(total_trials),
+            "valid_trials": int(valid_trials),
+            "execution_status": status,
+            "included_in_analysis": included,
+            "notes": notes
+        })
+
+    cov_df = pd.DataFrame(rows)
+    out_file = Path(output_path)
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    cov_df.to_csv(out_file, index=False)
+    logger.info(f"Model coverage table saved to {out_file}")
+    return cov_df
+

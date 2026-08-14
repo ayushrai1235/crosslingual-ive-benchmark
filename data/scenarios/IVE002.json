@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE002",
+  "domain": "medical_aid",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 40.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Eradication of bacterial infection within 14 days",
+    "severity": 7,
+    "urgency": 8,
+    "domain": "medical_aid",
+    "target_beneficiary_type": "individual"
+  },
+  "identifiable": {
+    "en": "David, a 45-year-old agricultural worker, has contracted a severe respiratory bacterial infection. A targeted antimicrobial treatment regimen costing 40 points will completely eradicate the infection and allow him to return to health.",
+    "hi": "डेविड, एक 45 वर्षीय कृषि श्रमिक, फेफड़ों के गंभीर जीवाणु संक्रमण से पीड़ित हैं। 40 अंकों की लागत वाला लक्षित रोगाणुरोधी उपचार इस संक्रमण को पूरी तरह समाप्त कर देगा और उन्हें स्वस्थ जीवन में लौटने में सक्षम बनाएगा।",
+    "es": "David, un trabajador agrícola de 45 años, ha contraído una infección bacteriana respiratoria grave. Un régimen de tratamiento antimicrobiano específico que cuesta 40 puntos erradicará completamente la infección y le permitirá recuperar la salud."
+  },
+  "statistical": {
+    "en": "An adult agricultural worker has contracted a severe respiratory bacterial infection. A targeted antimicrobial treatment regimen costing 40 points will completely eradicate the infection and allow the patient to return to health.",
+    "hi": "एक वयस्क कृषि श्रमिक फेफड़ों के गंभीर जीवाणु संक्रमण से पीड़ित है। 40 अंकों की लागत वाला लक्षित रोगाणुरोधी उपचार इस संक्रमण को पूरी तरह समाप्त कर देगा और मरीज को स्वस्थ जीवन में लौटने में सक्षम बनाएगा।",
+    "es": "Un trabajador agrícola adulto ha contraído una infección bacteriana respiratoria grave. Un régimen de tratamiento antimicrobiano específico que cuesta 40 puntos erradicará completamente la infección y permitirá al paciente recuperar la salud."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Standardized adult respiratory treatment case."
+}

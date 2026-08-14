@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE009",
+  "identifiable": {
+    "en": "Priya is a 10-year-old girl in a remote highland community at risk of dropping out due to a lack of school books and uniforms. An educational sponsorship package costing 35 points covers her entire academic year.",
+    "hi": "प्रिया एक सुदूर पहाड़ी समुदाय की 10 वर्षीय लड़की है, जिसे स्कूल की किताबों और वर्दी की कमी के कारण पढ़ाई छोड़ने का जोखिम है। 35 अंकों का एक शैक्षिक प्रायोजन पैकेज उसके पूरे शैक्षणिक वर्ष को कवर करता है।",
+    "es": "Priya es una niña de 10 años en una comunidad montañosa remota en riesgo de abandonar la escuela por falta de libros y uniformes. Un paquete de patrocinio educativo que cuesta 35 puntos cubre todo su año académico."
+  },
+  "statistical": {
+    "en": "A 10-year-old student in a remote highland community is at risk of school dropout due to a lack of educational materials. An educational sponsorship package costing 35 points covers an entire academic year.",
+    "hi": "एक सुदूर पहाड़ी समुदाय में 10 वर्षीय छात्र को शैक्षिक सामग्री के अभाव के कारण स्कूल छोड़ने का जोखिम है। 35 अंकों का एक शैक्षिक प्रायोजन पैकेज पूरे शैक्षणिक वर्ष को कवर करता है।",
+    "es": "Un estudiante de 10 años en una comunidad montañosa remota está en riesgo de deserción escolar debido a la falta de materiales educativos. Un paquete de patrocinio educativo que cuesta 35 puntos cubre un año académico completo."
+  }
+}

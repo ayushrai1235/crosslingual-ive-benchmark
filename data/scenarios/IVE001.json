@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE001",
+  "domain": "medical_aid",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 50.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Full recovery within 4 weeks following surgery",
+    "severity": 8,
+    "urgency": 9,
+    "domain": "medical_aid",
+    "target_beneficiary_type": "individual"
+  },
+  "identifiable": {
+    "en": "Maya is an 8-year-old child in a rural clinic suffering from an acute cardiac condition. Without immediate corrective surgery costing 50 points, her condition will become fatal within weeks. The surgical team is prepared, and successful surgery offers a 95% probability of full recovery.",
+    "hi": "माया एक ग्रामीण क्लिनिक में भर्ती 8 वर्ष की बच्ची है जो एक गंभीर हृदय रोग से पीड़ित है। 50 अंकों की लागत वाली तत्काल सुधारात्मक सर्जरी के बिना, उसकी स्थिति कुछ ही हफ्तों में जानलेवा हो जाएगी। सर्जिकल टीम तैयार है और सफल सर्जरी से पूरी तरह ठीक होने की 95% संभावना है।",
+    "es": "Maya es una niña de 8 años en una clínica rural que padece una afección cardíaca aguda. Sin una cirugía correctiva inmediata que cuesta 50 puntos, su estado será fatal en pocas semanas. El equipo quirúrgico está listo y una intervención exitosa ofrece un 95% de probabilidad de recuperación total."
+  },
+  "statistical": {
+    "en": "A patient in a rural clinic is suffering from an acute cardiac condition. Without immediate corrective surgery costing 50 points, the medical condition will become fatal within weeks. The surgical team is prepared, and successful surgery offers a 95% probability of full recovery.",
+    "hi": "एक ग्रामीण क्लिनिक में एक मरीज गंभीर हृदय रोग से पीड़ित है। 50 अंकों की लागत वाली तत्काल सुधारात्मक सर्जरी के बिना, यह चिकित्सीय स्थिति कुछ ही हफ्तों में जानलेवा हो जाएगी। सर्जिकल टीम तैयार है और सफल सर्जरी से पूरी तरह ठीक होने की 95% संभावना है।",
+    "es": "Un paciente en una clínica rural padece una afección cardíaca aguda. Sin una cirugía correctiva inmediata que cuesta 50 puntos, la condición médica será fatal en pocas semanas. El equipo quirúrgico está listo y una intervención exitosa ofrece un 95% de probabilidad de recuperación total."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Standardized acute cardiac pediatric intervention with balanced severity."
+}

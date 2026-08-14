@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE013",
+  "domain": "food_security",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 40.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Nutritional recovery and fortified meal basket for 90 days",
+    "severity": 8,
+    "urgency": 9,
+    "domain": "food_security",
+    "target_beneficiary_type": "individual"
+  },
+  "identifiable": {
+    "en": "Rohan, a 4-year-old toddler suffering from severe acute malnutrition following local drought, requires therapeutic ready-to-use food supplements. A 90-day targeted nutritional regimen costing 40 points restores healthy body mass.",
+    "hi": "रोहन, सूखे के बाद गंभीर कुपोषण से पीड़ित 4 वर्षीय बच्चा है, जिसे उपचारात्मक खाद्य सप्लीमेंट की आवश्यकता है। 40 अंकों की लागत वाला 90-दिवसीय पोषण आहार स्वस्थ शरीर के वजन को बहाल करता है।",
+    "es": "Rohan, un niño de 4 años que sufre de desnutrición aguda severa tras una sequía local, requiere suplementos alimenticios terapéuticos. Un régimen nutricional de 90 días por 40 puntos restaura un peso corporal saludable."
+  },
+  "statistical": {
+    "en": "A 4-year-old child experiencing severe acute malnutrition following local drought requires therapeutic ready-to-use food supplements. A 90-day targeted nutritional regimen costing 40 points restores healthy body mass.",
+    "hi": "स्थानीय सूखे के बाद गंभीर कुपोषण का सामना कर रहे एक 4 वर्षीय बच्चे को उपचारात्मक खाद्य सप्लीमेंट की आवश्यकता है। 40 अंकों की लागत वाला 90-दिवसीय पोषण आहार स्वस्थ शरीर के वजन को बहाल करता है।",
+    "es": "Un infante de 4 años que experimenta desnutrición aguda severa tras una sequía local requiere suplementos alimenticios terapéuticos. Un régimen nutricional de 90 días por 40 puntos restaura un peso corporal saludable."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Nutritional rehabilitation case."
+}

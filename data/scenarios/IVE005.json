@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE005",
+  "domain": "disaster_relief",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 45.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Emergency shelter and thermal insulation for 60 days",
+    "severity": 8,
+    "urgency": 9,
+    "domain": "disaster_relief",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Sofia, a mother of two whose home was destroyed by a category-4 tropical cyclone, is currently exposed to extreme weather. An emergency modular shelter kit costing 45 points provides weatherproofing and thermal safety for 60 days.",
+    "hi": "सोफिया, दो बच्चों की माँ जिनका घर श्रेणी-4 के उष्णकटिबंधीय चक्रवात में नष्ट हो गया था, वर्तमान में अत्यधिक मौसम की चपेट में हैं। 45 अंकों की लागत वाली एक आपातकालीन मॉड्यूलर आश्रय किट 60 दिनों के लिए मौसम सुरक्षा प्रदान करती है।",
+    "es": "Sofía, una madre de dos hijos cuya vivienda fue destruida por un ciclón tropical de categoría 4, se encuentra actualmente expuesta a condiciones climáticas extremas. Un kit de refugio modular de emergencia que cuesta 45 puntos proporciona aislamiento y seguridad térmica durante 60 días."
+  },
+  "statistical": {
+    "en": "A displaced household whose residence was destroyed by a category-4 tropical cyclone is currently exposed to extreme weather. An emergency modular shelter kit costing 45 points provides weatherproofing and thermal safety for 60 days.",
+    "hi": "एक विस्थापित परिवार जिसका निवास श्रेणी-4 के उष्णकटिबंधीय चक्रवात में नष्ट हो गया था, वर्तमान में अत्यधिक मौसम की चपेट में है। 45 अंकों की लागत वाली एक आपातकालीन मॉड्यूलर आश्रय किट 60 दिनों के लिए मौसम सुरक्षा प्रदान करती है।",
+    "es": "Un hogar desplazado cuya vivienda fue destruida por un ciclón tropical de categoría 4 se encuentra actualmente expuesto a condiciones climáticas extremas. Un kit de refugio modular de emergencia que cuesta 45 puntos proporciona aislamiento y seguridad térmica durante 60 días."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Cyclone shelter relief case."
+}

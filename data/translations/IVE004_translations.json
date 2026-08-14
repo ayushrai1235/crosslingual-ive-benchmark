@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE004",
+  "identifiable": {
+    "en": "Aarav is a 12-year-old student diagnosed with rapid-onset corneal dystrophy. A specialized corneal graft procedure costing 35 points will preserve his eyesight and prevent irreversible blindness.",
+    "hi": "आरव एक 12 वर्षीय छात्र है जिसमें कॉर्नियल डिस्ट्रॉफी का तेजी से प्रभाव देखा गया है। 35 अंकों की लागत वाली विशेष कॉर्नियल ग्राफ्ट प्रक्रिया उसकी दृष्टि को सुरक्षित रखेगी और अपरिवर्तनीय अंधेपन को रोकेगी।",
+    "es": "Aarav es un estudiante de 12 años diagnosticado con distrofia corneal de rápida evolución. Un procedimiento especializado de injerto corneal que cuesta 35 puntos preservará su vista y evitará una ceguera irreversible."
+  },
+  "statistical": {
+    "en": "A 12-year-old pediatric patient has been diagnosed with rapid-onset corneal dystrophy. A specialized corneal graft procedure costing 35 points will preserve eyesight and prevent irreversible blindness.",
+    "hi": "एक 12 वर्षीय बाल रोगी में कॉर्नियल डिस्ट्रॉफी का तेजी से प्रभाव देखा गया है। 35 अंकों की लागत वाली विशेष कॉर्नियल ग्राफ्ट प्रक्रिया दृष्टि को सुरक्षित रखेगी और अपरिवर्तनीय अंधेपन को रोकेगी।",
+    "es": "Un paciente pediátrico de 12 años ha sido diagnosticado con distrofia corneal de rápida evolución. Un procedimiento especializado de injerto corneal que cuesta 35 puntos preservará la vista y evitará una ceguera irreversible."
+  }
+}

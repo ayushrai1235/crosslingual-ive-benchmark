@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE006",
+  "domain": "disaster_relief",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 55.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Structural stabilization and emergency heating",
+    "severity": 7,
+    "urgency": 8,
+    "domain": "disaster_relief",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Carlos is a retired carpenter whose mountain cottage was partially collapsed by an earthquake tremor. Providing a stabilization beam and heating unit costing 55 points will secure the home against imminent collapse.",
+    "hi": "कार्लोस एक सेवानिवृत्त बढ़ई हैं जिनकी पहाड़ी कुटिया भूकंप के झटके से आंशिक रूप से ढह गई थी। 55 अंकों की लागत वाली स्थिरीकरण बीम और हीटिंग इकाई प्रदान करने से घर को आसन्न पतन से बचाया जा सकेगा।",
+    "es": "Carlos es un carpintero jubilado cuya cabaña de montaña colapsó parcialmente debido a un temblor sísmico. La instalación de una viga de estabilización y una unidad de calefacción por 55 puntos asegurará la vivienda contra un colapso inminente."
+  },
+  "statistical": {
+    "en": "A homeowner whose residential unit was partially collapsed by an earthquake tremor requires emergency assistance. Providing a stabilization beam and heating unit costing 55 points will secure the structure against imminent collapse.",
+    "hi": "एक गृहस्वामी जिसका आवासीय ढांचा भूकंप के झटके से आंशिक रूप से ढह गया था, उसे आपातकालीन सहायता की आवश्यकता है। 55 अंकों की लागत वाली स्थिरीकरण बीम और हीटिंग इकाई प्रदान करने से संरचना को आसन्न पतन से बचाया जा सकेगा।",
+    "es": "Un propietario cuya unidad residencial colapsó parcialmente debido a un temblor sísmico requiere asistencia de emergencia. La instalación de una viga de estabilización y una unidad de calefacción por 55 puntos asegurará la estructura contra un colapso inminente."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Earthquake stabilization case."
+}

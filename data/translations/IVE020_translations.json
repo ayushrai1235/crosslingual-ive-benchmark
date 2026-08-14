@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE020",
+  "identifiable": {
+    "en": "Vikram lives in an area where periodic municipal water line breaches cause recurring cholera outbreaks. An annual supply of water purification tablets and a safe storage container costing 25 points prevents contamination.",
+    "hi": "विक्रम ऐसे क्षेत्र में रहते हैं जहाँ नगर निगम की पानी की लाइनों के टूटने से बार-बार हैजा फैलता है। 25 अंकों की लागत वाली जल शोधन गोलियों और सुरक्षित भंडारण कंटेनर की वार्षिक आपूर्ति संदूषण को रोकती है।",
+    "es": "Vikram vive en una zona donde las roturas periódicas de tuberías causan brotes recurrentes de cólera. Un suministro anual de tabletas purificadoras y un contenedor seguro por 25 puntos previene la contaminación."
+  },
+  "statistical": {
+    "en": "A residential unit in an area where municipal water line breaches cause recurring bacterial outbreaks requires point-of-use disinfection. An annual supply of water purification tablets and a safe storage container costing 25 points prevents contamination.",
+    "hi": "ऐसे क्षेत्र में स्थित आवासीय इकाई जहाँ पानी की लाइनों के टूटने से बार-बार जीवाणु प्रकोप होता है, उसे कीटाणुशोधन की आवश्यकता है। 25 अंकों की लागत वाली जल शोधन गोलियों और सुरक्षित कंटेनर की वार्षिक आपूर्ति संदूषण को रोकती है।",
+    "es": "Una unidad residencial en una zona donde las roturas de tuberías causan brotes bacterianos recurrentes requiere desinfección. Un suministro anual de tabletas purificadoras y un contenedor seguro por 25 puntos previene la contaminación."
+  }
+}

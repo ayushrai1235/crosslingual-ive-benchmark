@@ -1,0 +1,8 @@
+You are taking an objective language comprehension and instruction-following test.
+
+QUESTION:
+{question}
+
+INSTRUCTIONS:
+Answer the question directly and precisely. Return your answer strictly as a JSON object:
+{{"answer": "<your concise answer>"}}

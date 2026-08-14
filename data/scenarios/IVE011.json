@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE011",
+  "domain": "education_access",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 40.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Vocational technical certification in electrical maintenance",
+    "severity": 5,
+    "urgency": 5,
+    "domain": "education_access",
+    "target_beneficiary_type": "individual"
+  },
+  "identifiable": {
+    "en": "Sunil is an 18-year-old youth from an under-resourced settlement seeking vocational training. A comprehensive trade certification course in electrical mechanics costing 40 points guarantees technical qualification.",
+    "hi": "सुनील एक कम संसाधन वाली बस्ती का 18 वर्षीय युवक है जो व्यावसायिक प्रशिक्षण की तलाश में है। 40 अंकों की लागत वाला इलेक्ट्रिकल मैकेनिक्स में एक व्यापक प्रमाणन पाठ्यक्रम तकनीकी योग्यता की गारंटी देता है।",
+    "es": "Sunil es un joven de 18 años de un asentamiento de bajos recursos que busca capacitación vocacional. Un curso integral de certificación técnica en mecánica eléctrica que cuesta 40 puntos garantiza su cualificación técnica."
+  },
+  "statistical": {
+    "en": "A young adult candidate from an under-resourced settlement requires vocational training. A comprehensive trade certification course in electrical mechanics costing 40 points guarantees technical qualification.",
+    "hi": "एक कम संसाधन वाली बस्ती का एक युवा वयस्क उम्मीदवार व्यावसायिक प्रशिक्षण की तलाश में है। 40 अंकों की लागत वाला इलेक्ट्रिकल मैकेनिक्स में एक व्यापक प्रमाणन पाठ्यक्रम तकनीकी योग्यता की गारंटी देता है।",
+    "es": "Un candidato adulto joven de un asentamiento de bajos recursos requiere capacitación vocacional. Un curso integral de certificación técnica en mecánica eléctrica que cuesta 40 puntos garantiza su cualificación técnica."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Vocational trade training case."
+}

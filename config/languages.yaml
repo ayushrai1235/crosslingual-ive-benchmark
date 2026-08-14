@@ -1,0 +1,44 @@
+# Supported and Extensible Languages Configuration
+
+languages:
+  en:
+    name: "English"
+    native_name: "English"
+    iso_639_1: "en"
+    script: "Latin"
+    direction: "ltr"
+    family: "Indo-European (Germanic)"
+    benchmark_status: "primary_baseline"
+    notes: "Canonical source language for scenario generation."
+
+  hi:
+    name: "Hindi"
+    native_name: "हिन्दी"
+    iso_639_1: "hi"
+    script: "Devanagari"
+    direction: "ltr"
+    family: "Indo-European (Indo-Aryan)"
+    benchmark_status: "primary_evaluation"
+    notes: "Major non-Latin script language with widespread South Asian usage."
+
+  es:
+    name: "Spanish"
+    native_name: "Español"
+    iso_639_1: "es"
+    script: "Latin"
+    direction: "ltr"
+    family: "Indo-European (Romance)"
+    benchmark_status: "primary_evaluation"
+    notes: "Major global Latin-script language with extensive representation."
+
+# Extensible registry for future research phases
+extensible_languages:
+  gu:
+    name: "Gujarati"
+    native_name: "ગુજરાતી"
+    iso_639_1: "gu"
+    script: "Gujarati"
+    direction: "ltr"
+    family: "Indo-European (Indo-Aryan)"
+    benchmark_status: "future_expansion"
+    notes: "Low-to-medium resource Indic language with distinctive script."

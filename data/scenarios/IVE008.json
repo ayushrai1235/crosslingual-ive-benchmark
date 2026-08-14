@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE008",
+  "domain": "disaster_relief",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 50.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Wildfire smoke filtration and temporary containment",
+    "severity": 6,
+    "urgency": 7,
+    "domain": "disaster_relief",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Lucas and his family are sheltered in a wildfire perimeter zone with hazardous particulate air levels. Installing a high-efficiency particulate air scrubber costing 50 points protects the household from severe pulmonary injury.",
+    "hi": "लुकास और उनका परिवार जंगल की आग के परिधि क्षेत्र में खतरनाक वायु स्तर के बीच आश्रय लिए हुए हैं। 50 अंकों की लागत वाला उच्च दक्षता वाला वायु शोधक स्थापित करने से परिवार को फेफड़ों की गंभीर क्षति से बचाया जा सकता है।",
+    "es": "Lucas y su familia están refugiados en una zona perimetral de incendios forestales con niveles peligrosos de partículas en el aire. La instalación de un purificador de aire de alta eficiencia por 50 puntos protege al hogar de daños pulmonares graves."
+  },
+  "statistical": {
+    "en": "A residential unit situated in a wildfire perimeter zone has hazardous particulate air levels. Installing a high-efficiency particulate air scrubber costing 50 points protects the occupants from severe pulmonary injury.",
+    "hi": "जंगल की आग के परिधि क्षेत्र में स्थित एक आवासीय इकाई में खतरनाक वायु स्तर है। 50 अंकों की लागत वाला उच्च दक्षता वाला वायु शोधक स्थापित करने से निवासियों को फेफड़ों की गंभीर क्षति से बचाया जा सकता है।",
+    "es": "Una unidad residencial situada en una zona perimetral de incendios forestales presenta niveles peligrosos de partículas en el aire. La instalación de un purificador de aire de alta eficiencia por 50 puntos protege a los ocupantes de daños pulmonares graves."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Wildfire air purification case."
+}

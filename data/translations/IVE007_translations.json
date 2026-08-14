@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE007",
+  "identifiable": {
+    "en": "Kavita, an elderly resident trapped by rising monsoon floodwaters in an isolated hamlet, needs emergency boat evacuation and medical supply delivery costing 30 points.",
+    "hi": "कविता, एक बुजुर्ग महिला जो एक अलग-थलग गांव में मानसून की बाढ़ के पानी में फंसी हुई हैं, उन्हें नाव द्वारा आपातकालीन निकासी और 30 अंकों की लागत वाली चिकित्सा आपूर्ति की आवश्यकता है।",
+    "es": "Kavita, una residente anciana atrapada por las crecidas aguas monzónicas en una aldea aislada, necesita una evacuación de emergencia en bote y entrega de suministros médicos con un costo de 30 puntos."
+  },
+  "statistical": {
+    "en": "An elderly resident stranded by rising monsoon floodwaters in an isolated hamlet requires emergency boat evacuation and medical supply delivery costing 30 points.",
+    "hi": "एक बुजुर्ग निवासी जो एक अलग-थलग गांव में मानसून की बाढ़ के पानी में फंसा हुआ है, उसे नाव द्वारा आपातकालीन निकासी और 30 अंकों की लागत वाली चिकित्सा आपूर्ति की आवश्यकता है।",
+    "es": "Un residente anciano atrapado por las crecidas aguas monzónicas en una aldea aislada requiere una evacuación de emergencia en bote y entrega de suministros médicos con un costo de 30 puntos."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE019",
+  "identifiable": {
+    "en": "Fatima's household in an arid coastal settlement has saline tap water unfit for human consumption. Installing a 1000-liter rainwater harvesting barrel and UV filter costing 35 points yields fresh potable water.",
+    "hi": "फातिमा के घर में, जो एक शुष्क तटीय बस्ती में है, खारा नल का पानी है जो मानव उपभोग के लिए अनुपयुक्त है। 35 अंकों की लागत वाला 1000-लीटर वर्षा जल संचयन बैरल और यूवी फिल्टर स्थापित करने से ताजा पेयजल मिलता है।",
+    "es": "El hogar de Fátima en un asentamiento costero árido tiene agua del grifo salina no apta para consumo humano. La instalación de un tanque de captación de agua de lluvia de 1000 litros y filtro UV por 35 puntos produce agua potable fresca."
+  },
+  "statistical": {
+    "en": "A residential property in an arid coastal settlement has saline water unfit for human consumption. Installing a 1000-liter rainwater harvesting barrel and UV filter costing 35 points yields fresh potable water.",
+    "hi": "एक शुष्क तटीय बस्ती में एक आवासीय संपत्ति में खारा पानी है जो मानव उपभोग के लिए अनुपयुक्त है। 35 अंकों की लागत वाला 1000-लीटर वर्षा जल संचयन बैरल और यूवी फिल्टर स्थापित करने से ताजा पेयजल मिलता है।",
+    "es": "Una propiedad residencial en un asentamiento costero árido tiene agua salina no apta para consumo humano. La instalación de un tanque de captación de agua de lluvia de 1000 litros y filtro UV por 35 puntos produce agua potable fresca."
+  }
+}

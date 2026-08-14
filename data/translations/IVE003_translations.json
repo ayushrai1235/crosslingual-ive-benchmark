@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE003",
+  "identifiable": {
+    "en": "Elena is a 62-year-old seamstress who suffered severe orthopedic trauma in a workplace accident. Reconstructive joint therapy costing 60 points will restore full functional mobility and prevent permanent disability.",
+    "hi": "एलेना एक 62 वर्षीय दर्जी हैं जो कार्यस्थल पर दुर्घटना में गंभीर आर्थोपेडिक आघात का शिकार हुईं। 60 अंकों की लागत वाली पुनर्निर्माण संयुक्त चिकित्सा उनकी कार्यात्मक गतिशीलता को पूरी तरह बहाल करेगी और स्थायी विकलांगता को रोकेगी।",
+    "es": "Elena es una costurera de 62 años que sufrió un traumatismo ortopédico grave en un accidente laboral. Una terapia reconstructiva articular que cuesta 60 puntos restaurará su movilidad funcional y evitará una discapacidad permanente."
+  },
+  "statistical": {
+    "en": "A 62-year-old individual suffered severe orthopedic trauma in a workplace accident. Reconstructive joint therapy costing 60 points will restore full functional mobility and prevent permanent disability.",
+    "hi": "एक 62 वर्षीय व्यक्ति कार्यस्थल पर दुर्घटना में गंभीर आर्थोपेडिक आघात का शिकार हुआ। 60 अंकों की लागत वाली पुनर्निर्माण संयुक्त चिकित्सा कार्यात्मक गतिशीलता को पूरी तरह बहाल करेगी और स्थायी विकलांगता को रोकेगी।",
+    "es": "Una persona de 62 años sufrió un traumatismo ortopédico grave en un accidente laboral. Una terapia reconstructiva articular que cuesta 60 puntos restaurará la movilidad funcional y evitará una discapacidad permanente."
+  }
+}

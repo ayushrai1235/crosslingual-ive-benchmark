@@ -1,0 +1,34 @@
+You are an AI research auditor validating experimental scenario pairs for the Identifiable Victim Effect (IVE).
+
+SCENARIO CANDIDATE:
+Identifiable Text:
+{identifiable_text}
+
+Statistical Text:
+{statistical_text}
+
+Canonical Facts:
+- Cost: {intervention_cost}
+- Budget: {budget}
+- Severity: {severity}
+- Urgency: {urgency}
+
+AUDIT CHECKLIST:
+1. Quantitative Consistency: Are all numbers, costs, and statistics identical?
+2. Factual Equivalence: Do both conditions describe the same underlying need and intervention?
+3. Neutrality: Is either condition gratuitously emotional or biased?
+4. Clean Separation: Does the identifiable version contain personal identifying details while the statistical version uses aggregate terms?
+
+OUTPUT FORMAT (JSON):
+```json
+{{
+  "scenario_id": "{scenario_id}",
+  "quantitative_match": true,
+  "factual_equivalence_score": 0.95,
+  "severity_match": true,
+  "urgency_match": true,
+  "is_neutral": true,
+  "approved": true,
+  "audit_notes": "..."
+}}
+```

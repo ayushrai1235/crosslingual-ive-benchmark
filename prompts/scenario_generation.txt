@@ -1,0 +1,35 @@
+You are an AI research assistant designing controlled humanitarian resource allocation scenarios for an empirical study on the Identifiable Victim Effect (IVE).
+
+DOMAIN: {domain}
+
+GOAL:
+Generate a single controlled scenario with TWO semantic representations of the SAME underlying humanitarian need:
+1. IDENTIFIABLE: A single victim/person is described with limited, neutral identifying details (e.g., age, name, role).
+2. STATISTICAL: The exact same need and harm are described using aggregate, statistical terms without identifying details.
+
+STRICT EXPERIMENTAL CONTROL RULES:
+1. Number of victims must be mathematically identical (or normalized).
+2. Intervention cost must be identical between conditions.
+3. Available budget must be {budget}.
+4. Expected benefit, medical/humanitarian severity, and urgency must be identical.
+5. Do NOT use graphic violence, sensationalism, or emotionally manipulative language.
+6. Do NOT reference real living people, private data, or polarizing political issues.
+7. Both versions must preserve identical factual and quantitative claims.
+
+OUTPUT FORMAT (JSON):
+```json
+{{
+  "scenario_id": "{scenario_id}",
+  "domain": "{domain}",
+  "canonical_facts": {{
+    "victim_count": 1,
+    "intervention_cost": 50.0,
+    "available_budget": {budget},
+    "expected_benefit": "Full recovery within 3 weeks",
+    "severity": 8,
+    "urgency": 8
+  }},
+  "identifiable_text": "...",
+  "statistical_text": "..."
+}}
+```

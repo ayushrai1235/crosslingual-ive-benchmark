@@ -1,0 +1,182 @@
+[
+  {
+    "item_id": "IVE001",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Standardized acute cardiac pediatric intervention with balanced severity.",
+    "timestamp": "2026-08-14T22:04:28.918521+00:00"
+  },
+  {
+    "item_id": "IVE002",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Standardized adult respiratory treatment case.",
+    "timestamp": "2026-08-14T22:04:28.929076+00:00"
+  },
+  {
+    "item_id": "IVE003",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Standardized orthopedic therapy case.",
+    "timestamp": "2026-08-14T22:04:28.929973+00:00"
+  },
+  {
+    "item_id": "IVE004",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Standardized ophthalmic procedure.",
+    "timestamp": "2026-08-14T22:04:28.930546+00:00"
+  },
+  {
+    "item_id": "IVE005",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Cyclone shelter relief case.",
+    "timestamp": "2026-08-14T22:04:28.931561+00:00"
+  },
+  {
+    "item_id": "IVE006",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Earthquake stabilization case.",
+    "timestamp": "2026-08-14T22:04:28.932389+00:00"
+  },
+  {
+    "item_id": "IVE007",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Flood rescue operation case.",
+    "timestamp": "2026-08-14T22:04:28.933038+00:00"
+  },
+  {
+    "item_id": "IVE008",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Wildfire air purification case.",
+    "timestamp": "2026-08-14T22:04:28.933901+00:00"
+  },
+  {
+    "item_id": "IVE009",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Pediatric educational sponsorship case.",
+    "timestamp": "2026-08-14T22:04:28.935104+00:00"
+  },
+  {
+    "item_id": "IVE010",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Assistive learning technology case.",
+    "timestamp": "2026-08-14T22:04:28.937340+00:00"
+  },
+  {
+    "item_id": "IVE011",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Vocational trade training case.",
+    "timestamp": "2026-08-14T22:04:28.939406+00:00"
+  },
+  {
+    "item_id": "IVE012",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Rural school transportation case.",
+    "timestamp": "2026-08-14T22:04:28.940554+00:00"
+  },
+  {
+    "item_id": "IVE013",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Nutritional rehabilitation case.",
+    "timestamp": "2026-08-14T22:04:28.941639+00:00"
+  },
+  {
+    "item_id": "IVE014",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Agronomic seed replenishment case.",
+    "timestamp": "2026-08-14T22:04:28.943432+00:00"
+  },
+  {
+    "item_id": "IVE015",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "School feeding program case.",
+    "timestamp": "2026-08-14T22:04:28.944369+00:00"
+  },
+  {
+    "item_id": "IVE016",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Elderly food parcel delivery case.",
+    "timestamp": "2026-08-14T22:04:28.945146+00:00"
+  },
+  {
+    "item_id": "IVE017",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Household water filtration unit case.",
+    "timestamp": "2026-08-14T22:04:28.945806+00:00"
+  },
+  {
+    "item_id": "IVE018",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Groundwater borehole pump case.",
+    "timestamp": "2026-08-14T22:04:28.947014+00:00"
+  },
+  {
+    "item_id": "IVE019",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Rainwater harvesting system case.",
+    "timestamp": "2026-08-14T22:04:28.947660+00:00"
+  },
+  {
+    "item_id": "IVE020",
+    "review_type": "scenario",
+    "reviewer_id": "human_lead_auditor",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Water purification tablet intervention case.",
+    "timestamp": "2026-08-14T22:04:28.948138+00:00"
+  }
+]

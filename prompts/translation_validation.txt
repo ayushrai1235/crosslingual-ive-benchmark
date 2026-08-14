@@ -1,0 +1,36 @@
+You are an expert bilingual audit evaluator assessing the cross-lingual equivalence of an experimental scenario translation.
+
+SOURCE TEXT ({source_lang}):
+{source_text}
+
+TRANSLATED TEXT ({target_lang}):
+{translated_text}
+
+SCENARIO ID: {scenario_id}
+CONDITION: {condition}
+
+EVALUATION CRITERIA (Score 0.0 to 1.0):
+1. Semantic Equivalence: Does the translation convey the exact same meaning without additions or omissions?
+2. Quantitative Equivalence: Are all numbers, costs, timeframes, and statistics 100% preserved?
+3. Severity Equivalence: Is the described harm or medical condition equally severe?
+4. Emotional Equivalence: Is the tone and emotional intensity identical (not heightened or flattened)?
+5. Factual Equivalence: Are the factual claims and interventions identical?
+6. Cultural Neutrality: Is the translation culturally natural without introducing local stereotypes?
+
+OUTPUT FORMAT (JSON):
+```json
+{{
+  "scenario_id": "{scenario_id}",
+  "source_language": "{source_lang_code}",
+  "target_language": "{target_lang_code}",
+  "condition": "{condition}",
+  "semantic_equivalence": 0.95,
+  "quantitative_equivalence": 1.0,
+  "severity_equivalence": 0.95,
+  "emotional_equivalence": 0.90,
+  "factual_equivalence": 0.98,
+  "cultural_neutrality": 0.95,
+  "approved": true,
+  "reasons": []
+}}
+```

@@ -1,0 +1,98 @@
+[
+  {
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "question": "A clinic in a rural district provides care to flood survivors. Is this clinic helping individuals affected by natural disasters? Answer 'yes' or 'no'.",
+    "expected_answer": "yes",
+    "acceptable_variants": ["yes", "Yes", "YES"]
+  },
+  {
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "question": "A clinic has a budget of 100 points. If an intervention costs 40 points, how many points remain in the budget after funding it? Answer with only the number.",
+    "expected_answer": "60",
+    "acceptable_variants": ["60", "60.0", "60 points"]
+  },
+  {
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "question": "Output the single word 'CONFIRMED' in capital letters.",
+    "expected_answer": "CONFIRMED",
+    "acceptable_variants": ["CONFIRMED", "confirmed"]
+  },
+  {
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "question": "If a surgery has a 95% probability of full recovery, does it offer a higher chance of recovery than a treatment with an 80% probability? Answer 'yes' or 'no'.",
+    "expected_answer": "yes",
+    "acceptable_variants": ["yes", "Yes", "YES"]
+  },
+  {
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "question": "एक ग्रामीण क्लिनिक बाढ़ पीड़ितों को चिकित्सा सहायता दे रहा है। क्या यह क्लिनिक प्राकृतिक आपदा से प्रभावित लोगों की मदद कर रहा है? 'हाँ' या 'नहीं' में उत्तर दें।",
+    "expected_answer": "हाँ",
+    "acceptable_variants": ["हाँ", "हां", "yes", "Yes"]
+  },
+  {
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "question": "एक क्लिनिक का कुल बजट 100 अंक है। यदि एक उपचार की लागत 40 अंक है, तो इसे पूरा करने के बाद बजट में कितने अंक बचेंगे? केवल संख्या में उत्तर दें।",
+    "expected_answer": "60",
+    "acceptable_variants": ["60", "६०", "60 अंक"]
+  },
+  {
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "question": "केवल 'स्वीकृत' शब्द लिखकर उत्तर दें।",
+    "expected_answer": "स्वीकृत",
+    "acceptable_variants": ["स्वीकृत", "स्वीकार"]
+  },
+  {
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "question": "यदि एक सर्जरी में पूरी तरह ठीक होने की 95% संभावना है, तो क्या यह 80% संभावना वाले उपचार से बेहतर है? उत्तर 'हाँ' या 'नहीं' में दें।",
+    "expected_answer": "हाँ",
+    "acceptable_variants": ["हाँ", "हां", "yes", "Yes"]
+  },
+  {
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "question": "Una clínica rural atiende a sobrevivientes de inundaciones. ¿Esta clínica ayuda a personas afectadas por desastres naturales? Responda 'sí' o 'no'.",
+    "expected_answer": "sí",
+    "acceptable_variants": ["sí", "si", "Sí", "Si", "yes"]
+  },
+  {
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "question": "Una clínica tiene un presupuesto de 100 puntos. Si una intervención cuesta 40 puntos, ¿cuántos puntos quedan en el presupuesto tras financiarla? Responda solo con el número.",
+    "expected_answer": "60",
+    "acceptable_variants": ["60", "60.0", "60 puntos"]
+  },
+  {
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "question": "Escriba únicamente la palabra 'CONFIRMADO' en mayúsculas.",
+    "expected_answer": "CONFIRMADO",
+    "acceptable_variants": ["CONFIRMADO", "confirmado"]
+  },
+  {
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "question": "¿Una cirugía con un 95% de probabilidad de recuperación ofrece mayor probabilidad que un tratamiento con un 80%? Responda 'sí' o 'no'.",
+    "expected_answer": "sí",
+    "acceptable_variants": ["sí", "si", "Sí", "Si", "yes"]
+  }
+]

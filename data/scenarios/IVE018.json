@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE018",
+  "domain": "clean_water",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 50.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Deep tube-well borehole pump installation",
+    "severity": 8,
+    "urgency": 8,
+    "domain": "clean_water",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Gabriel's homestead suffers from seasonal groundwater depletion, forcing long journeys to unsafe ponds. Drilling a shallow groundwater borehole and manual handpump costing 50 points secures continuous clean drinking water.",
+    "hi": "गेब्रियल का घर मौसमी भूजल की कमी से ग्रस्त है, जिससे उन्हें असुरक्षित तालाबों की लंबी दूरी तय करनी पड़ती है। 50 अंकों की लागत से उथला भूजल बोरवेल और मैनुअल हैंडपंप स्थापित करने से निरंतर स्वच्छ पेयजल सुरक्षित होता है।",
+    "es": "El hogar de Gabriel sufre por el agotamiento estacional de aguas subterráneas, obligándolo a recorrer largas distancias hasta charcas inseguras. La perforación de un pozo y una bomba manual por 50 puntos asegura agua limpia continua."
+  },
+  "statistical": {
+    "en": "A rural homestead suffers from seasonal groundwater depletion, forcing long journeys to unsafe ponds. Drilling a shallow groundwater borehole and manual handpump costing 50 points secures continuous clean drinking water.",
+    "hi": "एक ग्रामीण घर मौसमी भूजल की कमी से ग्रस्त है, जिससे असुरक्षित तालाबों की लंबी दूरी तय करनी पड़ती है। 50 अंकों की लागत से उथला भूजल बोरवेल और मैनुअल हैंडपंप स्थापित करने से निरंतर स्वच्छ पेयजल सुरक्षित होता है।",
+    "es": "Un hogar rural sufre por el agotamiento estacional de aguas subterráneas, lo que obliga a recorrer largas distancias hasta charcas inseguras. La perforación de un pozo y una bomba manual por 50 puntos asegura agua limpia continua."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Groundwater borehole pump case."
+}

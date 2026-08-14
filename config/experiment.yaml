@@ -1,0 +1,98 @@
+# Experiment Hyperparameters and Configuration
+
+experiment_name: "crosslingual_ive_benchmark"
+version: "0.1.0"
+primary_hypothesis: "H1: The Identifiable Victim Effect (IVE) differs across languages (English, Hindi, Spanish)."
+null_hypothesis: "H0: The Identifiable Victim Effect (IVE) does not differ across languages."
+
+languages:
+  - en
+  - hi
+  - es
+
+conditions:
+  - identifiable
+  - statistical
+
+# Experimental stages
+stages:
+  smoke_test:
+    scenario_count: 1
+    languages:
+      - en
+    conditions: 2
+    enabled_models: 1
+    description: "Environment & inference validation (1 scenario × 1 lang × 2 conds × 1 model = 2 judgments)"
+  software_pilot:
+    scenario_count: 3
+    languages: 3
+    conditions: 2
+    enabled_models: 1
+    description: "Pipeline integrity and parser verification on mock (18 mock judgments)"
+  scientific_pilot:
+    scenario_count: 10
+    languages: 3
+    conditions: 2
+    enabled_models: 9
+    description: "Initial variance, effect size estimation, and parse rate check (540 judgments)"
+  full_benchmark:
+    scenario_count: 20
+    languages: 3
+    conditions: 2
+    enabled_models: 9
+    description: "Full pre-registered empirical benchmark on frozen dataset (20 scenarios × 3 langs × 2 conds × 9 models = 1,080 judgments)"
+
+# Scenario configuration
+budget: 100.0
+min_allocation: 0.0
+max_allocation: 100.0
+
+# Inference settings
+temperature: 0.0
+max_new_tokens: 128
+seed: 42
+batch_size: 1
+
+# Statistical analysis configuration
+bootstrap:
+  n_resamples: 10000
+  confidence_level: 0.95
+  resample_unit: "scenario" # Clustered by scenario
+  method: "percentile"
+
+statistical_testing:
+  alpha: 0.05
+  multiplicity_correction: "holm" # "holm" or "fdr_bh"
+  primary_test: "paired_wilcoxon"
+  secondary_model: "linear_mixed_effects"
+
+# Translation audit thresholds
+translation_thresholds:
+  semantic_equivalence_min: 0.85
+  quantitative_equivalence_min: 1.0 # Strict 100% preservation of all numbers/costs/victims
+  severity_equivalence_min: 0.80
+  emotional_equivalence_min: 0.75
+  factual_equivalence_min: 0.90
+  cultural_neutrality_min: 0.80
+
+# Secondary judgment tasks (disabled by default to preserve focus on primary allocation DV)
+secondary_tasks:
+  enabled: false
+  tasks:
+    - severity_rating
+    - urgency_rating
+    - priority_rating
+
+# Data paths
+paths:
+  scenarios_dir: "data/scenarios"
+  translations_dir: "data/translations"
+  validation_dir: "data/validation"
+  manifest_path: "data/dataset_manifest.json"
+  judgments_dir: "data/judgments"
+  language_control_dir: "data/language_control"
+  raw_results_dir: "results/raw"
+  processed_results_dir: "results/processed"
+  tables_dir: "results/tables"
+  figures_dir: "figures"
+  logs_dir: "logs"

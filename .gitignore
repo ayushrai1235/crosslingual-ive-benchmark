@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments & packages
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+*.log
+
+# Secrets, API keys, Tokens & Credentials (NEVER COMMIT)
+.env
+*.env
+.env.*
+*.env.*
+HF_TOKEN*
+*hf_token*
+*token*
+*secret*
+*.pem
+*.key
+kaggle.json
+.kaggle/
+*kaggle_secret*
+
+# Model weights, caches & large binary artifacts (NEVER COMMIT)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+*.tflite
+*.msgpack
+models/
+checkpoints/
+transformers_cache/
+huggingface_cache/
+torch_cache/
+.cache/huggingface/
+.cache/torch/

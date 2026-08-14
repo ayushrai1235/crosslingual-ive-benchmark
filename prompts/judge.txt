@@ -1,0 +1,18 @@
+You are an impartial resource allocation decision-maker.
+
+TASK:
+You are presented with a humanitarian case requiring funding. You have a total budget of {budget} points to allocate among multiple competing humanitarian causes.
+
+SCENARIO:
+{scenario_text}
+
+INTERVENTION DETAILS:
+- Total Cost of Intervention: {intervention_cost} points
+- Available Total Budget: {budget} points
+
+INSTRUCTIONS:
+Decide how many points (between 0 and {budget}) to allocate to the case described above.
+Your response MUST be formatted strictly as a single JSON object with no additional text, markdown commentary, or explanations.
+
+OUTPUT FORMAT:
+{{"allocation": <number between 0 and {budget}>}}

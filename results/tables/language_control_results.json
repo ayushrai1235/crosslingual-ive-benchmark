@@ -1,0 +1,1082 @@
+[
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097436+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097509+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097535+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097562+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097622+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097672+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097710+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097752+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097794+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097828+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097849+00:00"
+  },
+  {
+    "model_id": "llama_3_1_8b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.097873+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117591+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117643+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117658+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117671+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117695+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117719+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117739+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117760+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117780+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117800+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117823+00:00"
+  },
+  {
+    "model_id": "qwen3_8b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.117851+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.131914+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.131960+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.131977+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.131991+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132018+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132043+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132142+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132240+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132340+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132375+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132396+00:00"
+  },
+  {
+    "model_id": "qwen_2_5_7b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.132417+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146199+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146297+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146341+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146370+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146424+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146477+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146511+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146544+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146575+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146681+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146829+00:00"
+  },
+  {
+    "model_id": "gemma_3_4b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.146882+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163464+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163629+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163670+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163702+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163768+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163849+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163905+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.163967+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.164031+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.164092+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.164170+00:00"
+  },
+  {
+    "model_id": "gemma_3_12b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.164225+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177791+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177862+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177884+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177901+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177935+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177969+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.177994+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.178023+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.178055+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.178084+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.178108+00:00"
+  },
+  {
+    "model_id": "aya_expanse_8b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.178136+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.189952+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.189998+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190083+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190130+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190180+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190230+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190298+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190346+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190371+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190398+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190418+00:00"
+  },
+  {
+    "model_id": "command_r7b",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.190445+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203071+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203111+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203124+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203135+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203157+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203178+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203194+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203212+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203231+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203251+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203267+00:00"
+  },
+  {
+    "model_id": "bloomz_7b1_mt",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.203284+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_EN_01",
+    "language": "en",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.217933+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_EN_02",
+    "language": "en",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218017+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_EN_03",
+    "language": "en",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218058+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_EN_04",
+    "language": "en",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218100+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_HI_01",
+    "language": "hi",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218169+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_HI_02",
+    "language": "hi",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218231+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_HI_03",
+    "language": "hi",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218280+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_HI_04",
+    "language": "hi",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218332+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_ES_01",
+    "language": "es",
+    "category": "basic_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218391+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_ES_02",
+    "language": "es",
+    "category": "numerical_comprehension",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218454+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_ES_03",
+    "language": "es",
+    "category": "instruction_following",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218501+00:00"
+  },
+  {
+    "model_id": "mt0_xl",
+    "item_id": "LC_ES_04",
+    "language": "es",
+    "category": "factual_understanding",
+    "raw_response": "{\"answer\": \"Correct\"}",
+    "parsed_answer": "Correct",
+    "is_correct": false,
+    "timestamp": "2026-08-14T22:20:10.218553+00:00"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE016",
+  "domain": "food_security",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 45.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Community emergency grain bank allocation",
+    "severity": 7,
+    "urgency": 8,
+    "domain": "food_security",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Diego, an elderly pensioner living in an isolated village experiencing market supply cutoffs, requires essential staple foods. A direct staple food parcel costing 45 points provides 60 days of balanced nutrition.",
+    "hi": "डिएगो, एक अलग-थलग गांव में रहने वाले एक बुजुर्ग पेंशनभोगी, जहां बाजार आपूर्ति बंद हो गई है, उन्हें आवश्यक मुख्य खाद्य पदार्थों की आवश्यकता है। 45 अंकों का एक सीधा खाद्य पार्सल 60 दिनों का संतुलित पोषण प्रदान करता है।",
+    "es": "Diego, un jubilado anciano que vive en una aldea aislada con cortes en el suministro comercial, necesita alimentos básicos esenciales. Un paquete directo de alimentos básicos por 45 puntos proporciona 60 días de nutrición balanceada."
+  },
+  "statistical": {
+    "en": "An elderly resident living in an isolated village experiencing market supply cutoffs requires essential staple foods. A direct staple food parcel costing 45 points provides 60 days of balanced nutrition.",
+    "hi": "एक अलग-थलग गांव में रहने वाले एक बुजुर्ग निवासी जहां बाजार आपूर्ति बंद हो गई है, आवश्यक मुख्य खाद्य पदार्थों की आवश्यकता है। 45 अंकों का एक सीधा खाद्य पार्सल 60 दिनों का संतुलित पोषण प्रदान करता है।",
+    "es": "Un residente anciano que vive en una aldea aislada con cortes en el suministro comercial requiere alimentos básicos esenciales. Un paquete directo de alimentos básicos por 45 puntos proporciona 60 días de nutrición balanceada."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Elderly food parcel delivery case."
+}

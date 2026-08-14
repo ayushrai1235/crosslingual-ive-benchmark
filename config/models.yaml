@@ -1,0 +1,353 @@
+# ==============================================================================
+# Cross-Lingual IVE Benchmark: Preregistered 9-Model Judge Registry
+# 9 models across 7 distinct model families.
+# Evaluated strictly on: English (en), Hindi (hi), Spanish (es).
+# ==============================================================================
+
+version: "2.0.0"
+preregistered_panel_description: "Nine preregistered LLM judge models spanning nine model entries and seven distinct model families were evaluated."
+
+models:
+  # 1. Llama 3.1 8B Instruct
+  - id: "llama_3_1_8b"
+    name: "Llama-3.1-8B-Instruct"
+    family: "Llama"
+    category: "general_purpose"
+    hf_id: "meta-llama/Llama-3.1-8B-Instruct"
+    revision: "0e9e39f249a80c85ad86791f88002edb82b03229"
+    parameters: "8.0B"
+    license: "Llama 3.1 Community License"
+    officially_documented_languages:
+      - "en"
+      - "de"
+      - "fr"
+      - "it"
+      - "pt"
+      - "hi"
+      - "es"
+      - "th"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Core primary pretraining language."
+      hi: "Officially supported in Llama 3.1 multilingual fine-tuning."
+      es: "Officially supported European/Latin American language."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.5
+    chat_template: "llama-3"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 2. Qwen3 8B
+  - id: "qwen3_8b"
+    name: "Qwen3-8B"
+    family: "Qwen"
+    category: "general_reasoning_multilingual"
+    hf_id: "Qwen/Qwen3-8B"
+    revision: "99e0ff955745ba6d3e8e19b5b5463df2fa92cf7c"
+    parameters: "8.0B"
+    license: "Apache-2.0"
+    officially_documented_languages:
+      - "en"
+      - "zh"
+      - "hi"
+      - "es"
+      - "ar"
+      - "fr"
+      - "ru"
+      - "ja"
+      - "ko"
+      - "de"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Primary pretraining and instruction language."
+      hi: "Strong multilingual representation across Indic corpora."
+      es: "High-resource pretraining language."
+    architecture: "causal_lm"
+    disable_thinking: true
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.8
+    chat_template: "chatml"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 3. Qwen 2.5 7B Instruct
+  - id: "qwen_2_5_7b"
+    name: "Qwen2.5-7B-Instruct"
+    family: "Qwen"
+    category: "general_multilingual"
+    hf_id: "Qwen/Qwen2.5-7B-Instruct"
+    revision: "d7dbd9a368d40be42e01dfa9290f671dc405a767"
+    parameters: "7.6B"
+    license: "Apache-2.0"
+    officially_documented_languages:
+      - "en"
+      - "zh"
+      - "es"
+      - "fr"
+      - "de"
+      - "hi"
+      - "ar"
+      - "ru"
+      - "pt"
+      - "ja"
+      - "ko"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Primary instruction language."
+      hi: "Supported Indic language."
+      es: "Supported Romance language."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.5
+    chat_template: "chatml"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 4. Gemma 3 4B IT
+  - id: "gemma_3_4b"
+    name: "Gemma-3-4B-IT"
+    family: "Gemma"
+    category: "lightweight_multilingual"
+    hf_id: "google/gemma-3-4b-it"
+    revision: "54d5e94bbfb1d83ce93f9c6be3d5a4be461f95a4"
+    parameters: "4.0B"
+    license: "Gemma Terms of Use"
+    officially_documented_languages:
+      - "en"
+      - "hi"
+      - "es"
+      - "fr"
+      - "de"
+      - "it"
+      - "pt"
+      - "ar"
+      - "ja"
+      - "ko"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Primary language."
+      hi: "Multilingual instruction-tuned."
+      es: "Multilingual instruction-tuned."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 3.2
+    chat_template: "gemma"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 5. Gemma 3 12B IT
+  - id: "gemma_3_12b"
+    name: "Gemma-3-12B-IT"
+    family: "Gemma"
+    category: "larger_multilingual"
+    hf_id: "google/gemma-3-12b-it"
+    revision: "18f8e8f81014e7a89b3f3b97b0a7018861df40bb"
+    parameters: "12.0B"
+    license: "Gemma Terms of Use"
+    officially_documented_languages:
+      - "en"
+      - "hi"
+      - "es"
+      - "fr"
+      - "de"
+      - "it"
+      - "pt"
+      - "ar"
+      - "ja"
+      - "ko"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Primary language."
+      hi: "High-capacity multilingual instruction-tuned."
+      es: "High-capacity multilingual instruction-tuned."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 8.5
+    chat_template: "gemma"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 6. Aya Expanse 8B
+  - id: "aya_expanse_8b"
+    name: "Aya-Expanse-8B"
+    family: "Aya"
+    category: "multilingual_specialist"
+    hf_id: "CohereLabs/aya-expanse-8b"
+    revision: "4668b5ceb3c3b0fb320daef7d39366e408d6d6fb"
+    parameters: "8.0B"
+    license: "CC-BY-NC-4.0"
+    officially_documented_languages:
+      - "en"
+      - "hi"
+      - "es"
+      - "ar"
+      - "bn"
+      - "fr"
+      - "de"
+      - "id"
+      - "it"
+      - "ja"
+      - "ko"
+      - "pt"
+      - "ru"
+      - "sw"
+      - "ta"
+      - "te"
+      - "th"
+      - "tr"
+      - "ur"
+      - "vi"
+      - "zh"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Native instruction & evaluation."
+      hi: "Dedicated 23-language focal Indic language."
+      es: "Dedicated 23-language focal Romance language."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.5
+    chat_template: "aya"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 7. Command R7B
+  - id: "command_r7b"
+    name: "Command-R7B"
+    family: "Command"
+    category: "multilingual_general"
+    hf_id: "CohereLabs/c4ai-command-r7b-12-2024"
+    revision: "68a6f4438343f87532a32c25602410a8d6e355c2"
+    parameters: "7.0B"
+    license: "CC-BY-NC-4.0"
+    officially_documented_languages:
+      - "en"
+      - "fr"
+      - "de"
+      - "es"
+      - "it"
+      - "pt"
+      - "ja"
+      - "ko"
+      - "zh"
+      - "ar"
+      - "hi"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Core multilingual enterprise model."
+      hi: "Supported multilingual instruction."
+      es: "Supported multilingual instruction."
+    architecture: "causal_lm"
+    is_gated: true
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.5
+    chat_template: "command-r"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 8. BLOOMZ-7B1-MT
+  - id: "bloomz_7b1_mt"
+    name: "BLOOMZ-7B1-MT"
+    family: "BLOOMZ"
+    category: "multilingual_instruction"
+    hf_id: "bigscience/bloomz-7b1-mt"
+    revision: "5767b45f479d2b2deaa439a3f4e24eb5ee8225e0"
+    parameters: "7.1B"
+    license: "BigScience OpenRAIL-M v1"
+    officially_documented_languages:
+      - "en"
+      - "hi"
+      - "es"
+      - "fr"
+      - "ar"
+      - "zh"
+      - "pt"
+      - "bn"
+      - "id"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Multitask instruction fine-tuned."
+      hi: "Trained on xP3mt multitask Hindi instructions."
+      es: "Trained on xP3mt multitask Spanish instructions."
+    architecture: "causal_lm"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 5.2
+    chat_template: "plain_prompt"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true
+
+  # 9. mT0-XL
+  - id: "mt0_xl"
+    name: "mT0-XL"
+    family: "mT0"
+    category: "crosslingual_instruction"
+    hf_id: "bigscience/mt0-xl"
+    revision: "f78a2e7b57b98ae2e5d1a5aaebfae498c8cb5f87"
+    parameters: "3.7B"
+    license: "Apache-2.0"
+    officially_documented_languages:
+      - "en"
+      - "hi"
+      - "es"
+      - "ar"
+      - "fr"
+      - "zh"
+      - "pt"
+      - "bn"
+      - "ur"
+    experiment_languages:
+      - "en"
+      - "hi"
+      - "es"
+    language_support_notes:
+      en: "Pretrained mT5 baseline with xP3 cross-lingual fine-tuning."
+      hi: "Trained on xP3 Hindi instruction tasks."
+      es: "Trained on xP3 Spanish instruction tasks."
+    architecture: "seq2seq"
+    quantization: "4bit"
+    compute_dtype: "bfloat16"
+    estimated_vram_gb: 3.5
+    chat_template: "seq2seq_prompt"
+    temperature: 0.0
+    max_new_tokens: 128
+    enabled: true

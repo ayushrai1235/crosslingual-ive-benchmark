@@ -1,0 +1,27 @@
+{
+  "scenario_id": "IVE014",
+  "domain": "food_security",
+  "canonical_facts": {
+    "victim_count": 1,
+    "intervention_cost": 50.0,
+    "available_budget": 100.0,
+    "expected_benefit": "Drought-resistant seed stock and organic fertilizer",
+    "severity": 6,
+    "urgency": 7,
+    "domain": "food_security",
+    "target_beneficiary_type": "household"
+  },
+  "identifiable": {
+    "en": "Carmen, a smallholder farmer who lost her seasonal crop to late frost, faces severe household food shortages. Providing drought-resilient seed grain and fertilizer costing 50 points ensures a sustainable harvest.",
+    "hi": "कारमेन, एक छोटी किसान जिनकी मौसमी फसल पाले से नष्ट हो गई थी, गंभीर घरेलू खाद्य संकट का सामना कर रही हैं। 50 अंकों की लागत वाले सूखा-प्रतिरोधी बीज और उर्वरक प्रदान करने से टिकाऊ फसल सुनिश्चित होती है।",
+    "es": "Carmen, una pequeña agricultora que perdió su cosecha estacional debido a una helada tardía, enfrenta una grave escasez de alimentos. Proporcionar semillas resistentes a la sequía y fertilizantes por 50 puntos asegura una cosecha sostenible."
+  },
+  "statistical": {
+    "en": "A smallholder farming unit that lost its seasonal crop to late frost faces severe household food shortages. Providing drought-resilient seed grain and fertilizer costing 50 points ensures a sustainable harvest.",
+    "hi": "एक छोटा कृषि परिवार जिसकी मौसमी फसल पाले से नष्ट हो गई थी, गंभीर घरेलू खाद्य संकट का सामना कर रहा है। 50 अंकों की लागत वाले सूखा-प्रतिरोधी बीज और उर्वरक प्रदान करने से टिकाऊ फसल सुनिश्चित होती है।",
+    "es": "Una unidad agrícola pequeña que perdió su cosecha estacional debido a una helada tardía enfrenta una grave escasez de alimentos. Proporcionar semillas resistentes a la sequía y fertilizantes por 50 puntos asegura una cosecha sostenible."
+  },
+  "validation_metadata": {},
+  "human_reviewed": true,
+  "human_reviewer_notes": "Agronomic seed replenishment case."
+}

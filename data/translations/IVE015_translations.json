@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE015",
+  "identifiable": {
+    "en": "Ananya is a 7-year-old student whose single parent is unable to provide adequate daily calories. Enrolling her in a subsidized school nutrition kitchen costing 35 points guarantees daily balanced meals for 6 months.",
+    "hi": "अनन्या 7 वर्ष की छात्रा है जिसके माता-पिता पर्याप्त दैनिक कैलोरी प्रदान करने में असमर्थ हैं। 35 अंकों की लागत वाली रियायती स्कूल पोषण रसोई में उसका नामांकन 6 महीने के लिए संतुलित भोजन की गारंटी देता है।",
+    "es": "Ananya es una estudiante de 7 años cuyo progenitor no puede proporcionarle las calorías diarias adecuadas. Inscribirla en un comedor escolar subvencionado por 35 puntos garantiza comidas balanceadas durante 6 meses."
+  },
+  "statistical": {
+    "en": "A school-aged dependent whose family is unable to provide adequate daily calories faces nutritional deficit. Enrolling the student in a subsidized school nutrition kitchen costing 35 points guarantees daily balanced meals for 6 months.",
+    "hi": "एक स्कूली उम्र का आश्रित जिसका परिवार पर्याप्त दैनिक कैलोरी प्रदान करने में असमर्थ है, पोषण की कमी का सामना कर रहा है। 35 अंकों की लागत वाली रियायती स्कूल पोषण रसोई में नामांकन 6 महीने के लिए संतुलित भोजन की गारंटी देता है।",
+    "es": "Un dependiente en edad escolar cuya familia no puede proporcionarle las calorías diarias adecuadas enfrenta un déficit nutricional. Inscribir al estudiante en un comedor escolar subvencionado por 35 puntos garantiza comidas balanceadas durante 6 meses."
+  }
+}

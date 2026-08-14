@@ -1,0 +1,722 @@
+[
+  {
+    "item_id": "IVE001_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.032978+00:00"
+  },
+  {
+    "item_id": "IVE001_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033005+00:00"
+  },
+  {
+    "item_id": "IVE001_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033015+00:00"
+  },
+  {
+    "item_id": "IVE001_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033021+00:00"
+  },
+  {
+    "item_id": "IVE002_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033173+00:00"
+  },
+  {
+    "item_id": "IVE002_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033181+00:00"
+  },
+  {
+    "item_id": "IVE002_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033186+00:00"
+  },
+  {
+    "item_id": "IVE002_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033190+00:00"
+  },
+  {
+    "item_id": "IVE003_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033302+00:00"
+  },
+  {
+    "item_id": "IVE003_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033308+00:00"
+  },
+  {
+    "item_id": "IVE003_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033314+00:00"
+  },
+  {
+    "item_id": "IVE003_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033320+00:00"
+  },
+  {
+    "item_id": "IVE004_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033411+00:00"
+  },
+  {
+    "item_id": "IVE004_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033417+00:00"
+  },
+  {
+    "item_id": "IVE004_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033421+00:00"
+  },
+  {
+    "item_id": "IVE004_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033425+00:00"
+  },
+  {
+    "item_id": "IVE005_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033513+00:00"
+  },
+  {
+    "item_id": "IVE005_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033520+00:00"
+  },
+  {
+    "item_id": "IVE005_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033524+00:00"
+  },
+  {
+    "item_id": "IVE005_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033528+00:00"
+  },
+  {
+    "item_id": "IVE006_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033661+00:00"
+  },
+  {
+    "item_id": "IVE006_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033668+00:00"
+  },
+  {
+    "item_id": "IVE006_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033672+00:00"
+  },
+  {
+    "item_id": "IVE006_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033678+00:00"
+  },
+  {
+    "item_id": "IVE007_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033776+00:00"
+  },
+  {
+    "item_id": "IVE007_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033782+00:00"
+  },
+  {
+    "item_id": "IVE007_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033786+00:00"
+  },
+  {
+    "item_id": "IVE007_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033790+00:00"
+  },
+  {
+    "item_id": "IVE008_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033881+00:00"
+  },
+  {
+    "item_id": "IVE008_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033886+00:00"
+  },
+  {
+    "item_id": "IVE008_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033891+00:00"
+  },
+  {
+    "item_id": "IVE008_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033894+00:00"
+  },
+  {
+    "item_id": "IVE009_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033978+00:00"
+  },
+  {
+    "item_id": "IVE009_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033983+00:00"
+  },
+  {
+    "item_id": "IVE009_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.033987+00:00"
+  },
+  {
+    "item_id": "IVE009_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.033991+00:00"
+  },
+  {
+    "item_id": "IVE010_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034077+00:00"
+  },
+  {
+    "item_id": "IVE010_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034083+00:00"
+  },
+  {
+    "item_id": "IVE010_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034088+00:00"
+  },
+  {
+    "item_id": "IVE010_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034093+00:00"
+  },
+  {
+    "item_id": "IVE011_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034177+00:00"
+  },
+  {
+    "item_id": "IVE011_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034182+00:00"
+  },
+  {
+    "item_id": "IVE011_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034186+00:00"
+  },
+  {
+    "item_id": "IVE011_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034190+00:00"
+  },
+  {
+    "item_id": "IVE012_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034273+00:00"
+  },
+  {
+    "item_id": "IVE012_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034278+00:00"
+  },
+  {
+    "item_id": "IVE012_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034283+00:00"
+  },
+  {
+    "item_id": "IVE012_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034286+00:00"
+  },
+  {
+    "item_id": "IVE013_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034371+00:00"
+  },
+  {
+    "item_id": "IVE013_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034376+00:00"
+  },
+  {
+    "item_id": "IVE013_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034380+00:00"
+  },
+  {
+    "item_id": "IVE013_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034384+00:00"
+  },
+  {
+    "item_id": "IVE014_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034467+00:00"
+  },
+  {
+    "item_id": "IVE014_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034472+00:00"
+  },
+  {
+    "item_id": "IVE014_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034477+00:00"
+  },
+  {
+    "item_id": "IVE014_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034482+00:00"
+  },
+  {
+    "item_id": "IVE015_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034572+00:00"
+  },
+  {
+    "item_id": "IVE015_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034579+00:00"
+  },
+  {
+    "item_id": "IVE015_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034584+00:00"
+  },
+  {
+    "item_id": "IVE015_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034588+00:00"
+  },
+  {
+    "item_id": "IVE016_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034699+00:00"
+  },
+  {
+    "item_id": "IVE016_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034705+00:00"
+  },
+  {
+    "item_id": "IVE016_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034709+00:00"
+  },
+  {
+    "item_id": "IVE016_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034713+00:00"
+  },
+  {
+    "item_id": "IVE017_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034800+00:00"
+  },
+  {
+    "item_id": "IVE017_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034806+00:00"
+  },
+  {
+    "item_id": "IVE017_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034818+00:00"
+  },
+  {
+    "item_id": "IVE017_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034825+00:00"
+  },
+  {
+    "item_id": "IVE018_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034976+00:00"
+  },
+  {
+    "item_id": "IVE018_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.034986+00:00"
+  },
+  {
+    "item_id": "IVE018_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.034993+00:00"
+  },
+  {
+    "item_id": "IVE018_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.035000+00:00"
+  },
+  {
+    "item_id": "IVE019_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.035153+00:00"
+  },
+  {
+    "item_id": "IVE019_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.035163+00:00"
+  },
+  {
+    "item_id": "IVE019_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.035171+00:00"
+  },
+  {
+    "item_id": "IVE019_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.035178+00:00"
+  },
+  {
+    "item_id": "IVE020_hi_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.035327+00:00"
+  },
+  {
+    "item_id": "IVE020_hi_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.035337+00:00"
+  },
+  {
+    "item_id": "IVE020_es_identifiable",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for identifiable condition.",
+    "timestamp": "2026-08-14T22:04:40.035344+00:00"
+  },
+  {
+    "item_id": "IVE020_es_statistical",
+    "review_type": "translation",
+    "reviewer_id": "human_bilingual_linguist",
+    "approved": true,
+    "confidence": 5,
+    "notes": "Linguistic fidelity verified across English, Hindi, and Spanish for statistical condition.",
+    "timestamp": "2026-08-14T22:04:40.035351+00:00"
+  }
+]

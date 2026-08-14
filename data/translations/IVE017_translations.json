@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE017",
+  "identifiable": {
+    "en": "Meera and her family collect drinking water from a river contaminated with waterborne pathogens. A household ceramic membrane water filtration unit costing 30 points removes 99.9% of bacteria for 2 years.",
+    "hi": "मीरा और उनका परिवार जलजनित रोगजनकों से दूषित नदी से पीने का पानी एकत्र करते हैं। 30 अंकों की लागत वाली घरेलू सिरेमिक मेम्ब्रेन जल निस्पंदन इकाई 2 साल के लिए 99.9% बैक्टीरिया को हटाती है।",
+    "es": "Meera y su familia recolectan agua potable de un río contaminado con patógenos transmitidos por el agua. Una unidad de filtración de agua de membrana cerámica doméstica por 30 puntos elimina el 99.9% de las bacterias durante 2 años."
+  },
+  "statistical": {
+    "en": "A domestic household collects drinking water from a surface source contaminated with waterborne pathogens. A household ceramic membrane water filtration unit costing 30 points removes 99.9% of bacteria for 2 years.",
+    "hi": "एक घरेलू परिवार जलजनित रोगजनकों से दूषित सतही स्रोत से पीने का पानी एकत्र करता है। 30 अंकों की लागत वाली घरेलू सिरेमिक मेम्ब्रेन जल निस्पंदन इकाई 2 साल के लिए 99.9% बैक्टीरिया को हटाती है।",
+    "es": "Un hogar doméstico recolecta agua potable de una fuente superficial contaminada con patógenos transmitidos por el agua. Una unidad de filtración de agua de membrana cerámica doméstica por 30 puntos elimina el 99.9% de las bacterias durante 2 años."
+  }
+}

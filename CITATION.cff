@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, dataset, or codebase in your research, please cite it as below."
+title: "Does Language Change the Identifiable Victim Effect? A Cross-Lingual Study of LLM Moral Allocation Bias"
+version: 0.1.0
+date-released: 2026-08-15
+url: "https://github.com/crosslingual-ive/crosslingual-ive-benchmark"
+license: Apache-2.0
+keywords:
+  - "large language models"
+  - "identifiable victim effect"
+  - "cross-lingual evaluation"
+  - "moral reasoning"
+  - "resource allocation"
+authors:
+  - family-names: "Research Team"
+    given-names: "Cross-Lingual IVE Benchmark"

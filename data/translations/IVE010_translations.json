@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE010",
+  "identifiable": {
+    "en": "Mateo is a visually impaired 14-year-old student unable to access standard school literature. An assistive technology pack and Braille textbook set costing 45 points will enable him to continue secondary school education.",
+    "hi": "मातेओ एक दृष्टिबाधित 14 वर्षीय छात्र है जो मानक स्कूल साहित्य तक पहुँचने में असमर्थ है। 45 अंकों की लागत वाला एक सहायक तकनीक पैक और ब्रेल पाठ्यपुस्तक सेट उसे माध्यमिक विद्यालय की शिक्षा जारी रखने में सक्षम बनाएगा।",
+    "es": "Mateo es un estudiante de 14 años con discapacidad visual que no puede acceder a los libros escolares estándar. Un paquete de tecnología asistiva y libros en Braille con un costo de 45 puntos le permitirá continuar su educación secundaria."
+  },
+  "statistical": {
+    "en": "A visually impaired 14-year-old secondary student is unable to access standard print literature. An assistive technology pack and Braille textbook set costing 45 points will enable the student to continue secondary school education.",
+    "hi": "एक दृष्टिबाधित 14 वर्षीय माध्यमिक छात्र मानक मुद्रित साहित्य तक पहुँचने में असमर्थ है। 45 अंकों की लागत वाला एक सहायक तकनीक पैक और ब्रेल पाठ्यपुस्तक सेट छात्र को माध्यमिक विद्यालय की शिक्षा जारी रखने में सक्षम बनाएगा।",
+    "es": "Un estudiante de secundaria de 14 años con discapacidad visual no puede acceder a la literatura impresa estándar. Un paquete de tecnología asistiva y libros en Braille con un costo de 45 puntos permitirá al estudiante continuar su educación secundaria."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "IVE012",
+  "identifiable": {
+    "en": "Lucia is a 9-year-old child walking 8 kilometers daily through unsafe terrain to attend primary school. A dedicated rural school transport pass costing 30 points ensures daily safe transit for the academic year.",
+    "hi": "लूसिया एक 9 वर्षीय बच्ची है जो प्राथमिक विद्यालय जाने के लिए प्रतिदिन असुरक्षित रास्तों से 8 किलोमीटर पैदल चलती है। 30 अंकों का एक ग्रामीण स्कूल परिवहन पास शैक्षणिक वर्ष के लिए सुरक्षित आवागमन सुनिश्चित करता है।",
+    "es": "Lucía es una niña de 9 años que camina 8 kilómetros diarios por terreno inseguro para asistir a la escuela primaria. Un pase de transporte escolar rural dedicado que cuesta 30 puntos garantiza un traslado seguro durante el año escolar."
+  },
+  "statistical": {
+    "en": "A primary student must travel 8 kilometers daily through unsafe terrain to reach the nearest school. A dedicated rural school transport pass costing 30 points ensures daily safe transit for the academic year.",
+    "hi": "एक प्राथमिक छात्र को निकटतम स्कूल तक पहुँचने के लिए प्रतिदिन असुरक्षित रास्तों से 8 किलोमीटर की यात्रा करनी पड़ती है। 30 अंकों का एक ग्रामीण स्कूल परिवहन पास शैक्षणिक वर्ष के लिए सुरक्षित आवागमन सुनिश्चित करता है।",
+    "es": "Un estudiante de primaria debe recorrer 8 kilómetros diarios por terreno inseguro para llegar a la escuela más cercana. Un pase de transporte escolar rural dedicado que cuesta 30 puntos garantiza un traslado seguro durante el año escolar."
+  }
+}
